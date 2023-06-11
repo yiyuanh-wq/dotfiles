@@ -24,6 +24,8 @@ lsp.format_on_save({
 			"javascript",
 			"typescript",
 			"lua",
+			"c",
+			"ocaml",
 		},
 	},
 })

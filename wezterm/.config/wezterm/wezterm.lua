@@ -48,4 +48,24 @@ config.colors = {
 
 config.color_scheme = "Kanagawa (Gogh)"
 
+config.disable_default_key_bindings = true
+
+config.keys = {
+	{
+		key = "V",
+		mods = "CMD",
+		action = wezterm.action.PasteFrom("Clipboard"),
+	},
+	{
+		key = "C",
+		mods = "CMD",
+		action = wezterm.action.CopyTo("Clipboard"),
+	},
+	{
+		key = "q",
+		mods = "CMD",
+		action = wezterm.action.CloseCurrentPane({ confirm = true }),
+	},
+}
+
 return config
