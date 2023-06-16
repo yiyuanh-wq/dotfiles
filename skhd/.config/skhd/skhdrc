@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 cmd - w : /Applications/"Google Chrome.app"/Contents/MacOS/"Google Chrome"
+=======
+cmd + shift - w : /Applications/"Google Chrome.app"/Contents/MacOS/"Google Chrome"
+>>>>>>> ea028fe (push from new 16in M2)
 cmd - return: /Applications/WezTerm.app/Contents/MacOS/wezterm
 
 cmd + shift - f : yabai -m window --toggle zoom-fullscreen

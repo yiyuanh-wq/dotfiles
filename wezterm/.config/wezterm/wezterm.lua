@@ -9,7 +9,7 @@ if wezterm.config_builder then
 end
 
 config.font = wezterm.font("MonoLisa")
-config.font_size = 17
+config.font_size = 18
 
 config.window_decorations = "RESIZE"
 
@@ -66,6 +66,29 @@ config.keys = {
 		mods = "CMD",
 		action = wezterm.action.CloseCurrentPane({ confirm = true }),
 	},
+<<<<<<< HEAD
 }
 
+=======
+	{
+		key = "t",
+		mods = "CMD",
+		action = wezterm.action.SpawnTab("CurrentPaneDomain"),
+	},
+	{
+		key = "w",
+		mods = "CMD",
+		action = wezterm.action.CloseCurrentTab({ confirm = true }),
+	},
+}
+
+for i = 1, 8 do
+	table.insert(config.keys, {
+		key = tostring(i),
+		mods = "CTRL",
+		action = wezterm.action.ActivateTab(i - 1),
+	})
+end
+
+>>>>>>> ea028fe (push from new 16in M2)
 return config
