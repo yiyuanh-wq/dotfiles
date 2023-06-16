@@ -66,10 +66,6 @@ config.keys = {
 		mods = "CMD",
 		action = wezterm.action.CloseCurrentPane({ confirm = true }),
 	},
-<<<<<<< HEAD
-}
-
-=======
 	{
 		key = "t",
 		mods = "CMD",
@@ -90,5 +86,4 @@ for i = 1, 8 do
 	})
 end
 
->>>>>>> ea028fe (push from new 16in M2)
 return config
