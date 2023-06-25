@@ -26,6 +26,7 @@ lsp.format_on_save({
 			"lua",
 			"c",
 			"ocaml",
+			"rust",
 		},
 	},
 })

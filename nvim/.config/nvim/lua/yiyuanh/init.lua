@@ -7,4 +7,4 @@ require("yiyuanh.telescope")
 require("yiyuanh.colorizer")
 require("yiyuanh.comment")
 
-vim.cmd("colorscheme kanagawa")
+vim.cmd("colorscheme everforest")

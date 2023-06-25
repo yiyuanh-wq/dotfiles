@@ -9,7 +9,7 @@ if wezterm.config_builder then
 end
 
 config.font = wezterm.font("MonoLisa")
-config.font_size = 18
+config.font_size = 20
 
 config.window_decorations = "RESIZE"
 
@@ -21,32 +21,32 @@ config.hide_tab_bar_if_only_one_tab = true
 
 config.colors = {
 	tab_bar = {
-		background = "#1f1f28",
+		background = "#323d43",
 		active_tab = {
-			bg_color = "#1f1f28",
-			fg_color = "#dcd7ba",
+			bg_color = "#323d43",
+			fg_color = "#d8caac",
 		},
 		inactive_tab = {
-			bg_color = "#1f1f28",
-			fg_color = "#727169",
+			bg_color = "#323d43",
+			fg_color = "#505a60",
 		},
 		inactive_tab_hover = {
-			bg_color = "#2d4f67",
-			fg_color = "#c8c093",
+			bg_color = "#83b6af",
+			fg_color = "#d9bb80",
 			italic = false,
 		},
 		new_tab = {
-			bg_color = "#1f1f28",
-			fg_color = "#727169",
+			bg_color = "#323d43",
+			fg_color = "#505a60",
 		},
 		new_tab_hover = {
-			bg_color = "#2d4f67",
-			fg_color = "#c8c093",
+			bg_color = "#83b6af",
+			fg_color = "#d9bb80",
 		},
 	},
 }
 
-config.color_scheme = "Kanagawa (Gogh)"
+config.color_scheme = "Everforest Dark (Gogh)"
 
 config.disable_default_key_bindings = true
 
