@@ -19,34 +19,7 @@ config.enable_tab_bar = true
 config.use_fancy_tab_bar = false
 config.hide_tab_bar_if_only_one_tab = true
 
-config.colors = {
-	tab_bar = {
-		background = "#323d43",
-		active_tab = {
-			bg_color = "#323d43",
-			fg_color = "#d8caac",
-		},
-		inactive_tab = {
-			bg_color = "#323d43",
-			fg_color = "#505a60",
-		},
-		inactive_tab_hover = {
-			bg_color = "#83b6af",
-			fg_color = "#d9bb80",
-			italic = false,
-		},
-		new_tab = {
-			bg_color = "#323d43",
-			fg_color = "#505a60",
-		},
-		new_tab_hover = {
-			bg_color = "#83b6af",
-			fg_color = "#d9bb80",
-		},
-	},
-}
-
-config.color_scheme = "Everforest Dark (Gogh)"
+config.color_scheme = "Catppuccin Latte"
 
 config.disable_default_key_bindings = true
 

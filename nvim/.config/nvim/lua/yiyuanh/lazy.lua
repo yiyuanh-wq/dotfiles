@@ -19,7 +19,8 @@ require("lazy").setup({
 		version = false,
 		lazy = false,
 		priority = 1000, -- make sure to load this before all the other start plugins
-  },
+	},
+	{ "catppuccin/nvim", name = "catppuccin", priority = 1000 },
 	{ "nvim-treesitter/nvim-treesitter", build = ":TSUpdate" },
 	{ "nvim-lua/plenary.nvim" },
 	{ "jose-elias-alvarez/null-ls.nvim" },
