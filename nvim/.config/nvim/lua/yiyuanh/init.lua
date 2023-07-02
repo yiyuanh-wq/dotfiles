@@ -1,10 +1,5 @@
-require("yiyuanh.remap")
-require("yiyuanh.set")
+require("yiyuanh.defaults")
 require("yiyuanh.lazy")
-require("yiyuanh.treesitter")
-require("yiyuanh.lsp")
-require("yiyuanh.telescope")
-require("yiyuanh.colorizer")
-require("yiyuanh.comment")
+require("yiyuanh.plugins")
 
 vim.cmd("colorscheme catppuccin-latte")

@@ -12,18 +12,16 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
-	{ "folke/tokyonight.nvim" },
-	{ "rebelot/kanagawa.nvim" },
-	{
-		"neanias/everforest-nvim",
-		version = false,
-		lazy = false,
-		priority = 1000, -- make sure to load this before all the other start plugins
-	},
+	-- Catppuccin Colorscheme
 	{ "catppuccin/nvim", name = "catppuccin", priority = 1000 },
-	{ "nvim-treesitter/nvim-treesitter", build = ":TSUpdate" },
-	{ "nvim-lua/plenary.nvim" },
-	{ "jose-elias-alvarez/null-ls.nvim" },
+
+	-- Comment
+	{ "numToStr/Comment.nvim" },
+
+	-- Lualine
+	{ "nvim-lualine/lualine.nvim" },
+
+	-- LSP Zero
 	{
 		"VonHeikemen/lsp-zero.nvim",
 		branch = "v2.x",
@@ -45,6 +43,9 @@ require("lazy").setup({
 			{ "L3MON4D3/LuaSnip" }, -- Required
 		},
 	},
+
+	-- Null-ls
+	{ "jose-elias-alvarez/null-ls.nvim" },
 	{
 		"jay-babu/mason-null-ls.nvim",
 		event = { "BufReadPre", "BufNewFile" },
@@ -53,16 +54,22 @@ require("lazy").setup({
 			"jose-elias-alvarez/null-ls.nvim",
 		},
 	},
-	{
-		"nvim-telescope/telescope-fzf-native.nvim",
-		build = "cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release && cmake --install build --prefix build",
-	},
+
+	-- Plenary
+	{ "nvim-lua/plenary.nvim" },
+
+	-- Telescope
 	{
 		"nvim-telescope/telescope.nvim",
 		tag = "0.1.1",
 		-- or                              , branch = '0.1.1',
 		dependencies = { "nvim-lua/plenary.nvim" },
 	},
-	{ "norcalli/nvim-colorizer.lua" },
-	{ "numToStr/Comment.nvim" },
+	{
+		"nvim-telescope/telescope-fzf-native.nvim",
+		build = "cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release && cmake --install build --prefix build",
+	},
+
+	-- Treesitter
+	{ "nvim-treesitter/nvim-treesitter", build = ":TSUpdate" },
 })

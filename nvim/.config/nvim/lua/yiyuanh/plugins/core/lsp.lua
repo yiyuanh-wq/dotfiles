@@ -26,7 +26,6 @@ lsp.format_on_save({
 			"lua",
 			"c",
 			"ocaml",
-			"rust",
 		},
 	},
 })
@@ -37,8 +36,7 @@ local null_ls = require("null-ls")
 
 null_ls.setup({
 	sources = {
-		-- This just tells null-ls to recognize these sources.
-		-- You still need to install them.
+		-- Recognized sources, still need to install.
 		null_ls.builtins.formatting.stylua,
 		null_ls.builtins.formatting.prettier,
 		null_ls.builtins.formatting.autopep8,
