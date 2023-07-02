@@ -18,6 +18,9 @@ require("lazy").setup({
 	-- Comment
 	{ "numToStr/Comment.nvim" },
 
+	-- Harpoon
+	{ "theprimeagen/harpoon" },
+
 	-- Lualine
 	{ "nvim-lualine/lualine.nvim" },
 
