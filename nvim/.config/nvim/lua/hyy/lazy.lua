@@ -75,11 +75,22 @@ require("lazy").setup({
     end,
   },
 
+  -- Everforest
+  {
+    "neanias/everforest-nvim",
+    version = false,
+    lazy = false,
+    priority = 1000, -- make sure to load this before all the other start plugins
+    -- Optional; default configuration will be used if setup isn't called.
+    config = function()
+      require("everforest").setup({
+        -- Your config here
+      })
+    end,
+  },
+
   -- Gitsigns
   { "lewis6991/gitsigns.nvim" },
-
-  -- Glow
-  { "ellisonleao/glow.nvim" },
 
   -- Harpoon
   { "theprimeagen/harpoon" },

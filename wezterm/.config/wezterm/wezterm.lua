@@ -8,7 +8,7 @@ if wezterm.config_builder then
 	config = wezterm.config_builder()
 end
 
-config.font = wezterm.font("MonoLisa")
+config.font = wezterm.font("PragmataPro Mono Liga")
 config.font_size = 20
 
 config.window_decorations = "RESIZE"
@@ -19,7 +19,7 @@ config.enable_tab_bar = true
 config.use_fancy_tab_bar = false
 config.hide_tab_bar_if_only_one_tab = true
 
-config.color_scheme = "tokyonight_storm"
+config.color_scheme = "Everforest Light (Gogh)"
 
 config.disable_default_key_bindings = true
 
@@ -48,6 +48,22 @@ config.keys = {
 		key = "w",
 		mods = "CTRL",
 		action = wezterm.action.CloseCurrentTab({ confirm = true }),
+	},
+	{
+		key = "v",
+		mods = "CTRL",
+		action = wezterm.action.SplitPane {
+      direction = "Right",
+      size = { Percent = 50 }
+    }
+	},
+	{
+		key = "b",
+		mods = "CTRL",
+		action = wezterm.action.SplitPane {
+      direction = "Down",
+      size = { Percent = 50 }
+    }
 	},
 }
 
