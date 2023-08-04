@@ -144,6 +144,9 @@ require("lazy").setup({
   -- Plenary
   { "nvim-lua/plenary.nvim" },
 
+  -- Rose Pine
+  { 'rose-pine/neovim',     name = 'rose-pine' },
+
   -- Telescope
   {
     "nvim-telescope/telescope.nvim",
