@@ -19,7 +19,7 @@ config.enable_tab_bar = true
 config.use_fancy_tab_bar = false
 config.hide_tab_bar_if_only_one_tab = true
 
-config.color_scheme = "rose-pine-dawn"
+config.color_scheme = "Everforest Light (Gogh)"
 
 config.disable_default_key_bindings = true
 

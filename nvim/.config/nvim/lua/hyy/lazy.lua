@@ -145,7 +145,7 @@ require("lazy").setup({
   { "nvim-lua/plenary.nvim" },
 
   -- Rose Pine
-  { 'rose-pine/neovim',     name = 'rose-pine' },
+  { "rose-pine/neovim",     name = "rose-pine" },
 
   -- Telescope
   {
@@ -176,5 +176,8 @@ require("lazy").setup({
     "folke/trouble.nvim",
     dependencies = { "nvim-tree/nvim-web-devicons" },
     opts = {},
-  }
+  },
+
+  -- VSCode Theme
+  { "Mofiqul/vscode.nvim" },
 })
