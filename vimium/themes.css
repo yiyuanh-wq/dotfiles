@@ -3,7 +3,7 @@
 /*****************************************************************************/
 
 :root {
-  --font-size: 16;
+  --font-size: 18;
   --font-weight: normal;
   --font: tewi, Source Code Pro, sans;
   --padding: 2px;
@@ -14,7 +14,6 @@
   /***********************************/
 
   /* ---------- Tomorrow Night ---------- */
-  /* -- DELETE LINE TO ENABLE THEME
   --fg: #C5C8C6;
   --bg: #282A2E;
   --border: #373B41;

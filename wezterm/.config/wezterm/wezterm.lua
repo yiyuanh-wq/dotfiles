@@ -35,23 +35,13 @@ config.keys = {
 		action = wezterm.action.CopyTo("Clipboard"),
 	},
 	{
-		key = "q",
-		mods = "CTRL",
+		key = "w",
+		mods = "WIN|CTRL",
 		action = wezterm.action.CloseCurrentPane({ confirm = true }),
 	},
 	{
-		key = "t",
-		mods = "CTRL",
-		action = wezterm.action.SpawnTab("CurrentPaneDomain"),
-	},
-	{
-		key = "w",
-		mods = "CTRL",
-		action = wezterm.action.CloseCurrentTab({ confirm = true }),
-	},
-	{
 		key = "v",
-		mods = "CTRL",
+		mods = "WIN|CTRL",
 		action = wezterm.action.SplitPane {
       direction = "Right",
       size = { Percent = 50 }
@@ -59,20 +49,32 @@ config.keys = {
 	},
 	{
 		key = "b",
-		mods = "CTRL",
+		mods = "WIN|CTRL",
 		action = wezterm.action.SplitPane {
       direction = "Down",
       size = { Percent = 50 }
     }
 	},
+  {
+    key = "l",
+    mods = "WIN|CTRL",
+    action = wezterm.action.ActivatePaneDirection "Right"
+  },
+  {
+    key = "h",
+    mods = "WIN|CTRL",
+    action = wezterm.action.ActivatePaneDirection "Left"
+  },
+  {
+    key = "j",
+    mods = "WIN|CTRL",
+    action = wezterm.action.ActivatePaneDirection "Down"
+  },
+  {
+    key = "k",
+    mods = "WIN|CTRL",
+    action = wezterm.action.ActivatePaneDirection "Up"
+  }
 }
-
-for i = 1, 8 do
-	table.insert(config.keys, {
-		key = tostring(i),
-		mods = "CTRL",
-		action = wezterm.action.ActivateTab(i - 1),
-	})
-end
 
 return config
