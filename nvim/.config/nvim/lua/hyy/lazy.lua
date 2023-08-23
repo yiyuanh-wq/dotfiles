@@ -177,7 +177,4 @@ require("lazy").setup({
     dependencies = { "nvim-tree/nvim-web-devicons" },
     opts = {},
   },
-
-  -- VSCode Theme
-  { "Mofiqul/vscode.nvim" },
 })
