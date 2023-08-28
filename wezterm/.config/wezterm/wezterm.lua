@@ -8,7 +8,7 @@ if wezterm.config_builder then
 	config = wezterm.config_builder()
 end
 
-config.font = wezterm.font("MonoLisa")
+config.font = wezterm.font("MonoLisa Plus")
 config.font_size = 20
 
 config.window_decorations = "RESIZE"
