@@ -9,7 +9,7 @@ if wezterm.config_builder then
 end
 
 config.font = wezterm.font("PragmataPro Mono Liga")
-config.font_size = 22
+config.font_size = 24
 
 config.window_decorations = "RESIZE"
 
@@ -19,7 +19,7 @@ config.enable_tab_bar = true
 config.use_fancy_tab_bar = false
 config.hide_tab_bar_if_only_one_tab = true
 
-config.color_scheme = "Catppuccin Latte"
+config.color_scheme = "Everforest Light (Gogh)"
 
 config.disable_default_key_bindings = true
 
