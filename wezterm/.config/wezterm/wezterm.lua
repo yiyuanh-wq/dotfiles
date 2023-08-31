@@ -11,8 +11,6 @@ end
 config.font = wezterm.font("MonoLisa Plus")
 config.font_size = 20
 
-config.window_decorations = "RESIZE"
-
 config.force_reverse_video_cursor = true
 
 config.enable_tab_bar = true
