@@ -3,6 +3,7 @@
   "LuaSnip": { "branch": "master", "commit": "c4d6298347f7707e9757351b2ee03d0c00da5c20" },
   "catppuccin": { "branch": "main", "commit": "b573866ef64122119668f375ebb794bcb3b518e2" },
   "cmp-nvim-lsp": { "branch": "main", "commit": "44b16d11215dce86f253ce0c30949813c0a90765" },
+  "edge": { "branch": "master", "commit": "a4fd4f458331d42677d992f428235c491b2016aa" },
   "everforest-nvim": { "branch": "main", "commit": "e0a2251ec840793afa2db05ed0b8b83291ed74ed" },
   "gitsigns.nvim": { "branch": "main", "commit": "749267aaa863c30d721c9913699c5d94e0c07dd3" },
   "harpoon": { "branch": "master", "commit": "21f4c47c6803d64ddb934a5b314dcb1b8e7365dc" },

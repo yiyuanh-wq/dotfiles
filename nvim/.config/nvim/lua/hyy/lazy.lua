@@ -17,6 +17,8 @@ require("lazy").setup({
 
   -- Comment
   { "numToStr/Comment.nvim" },
+  
+  { "sainnhe/edge" },
 
   -- Everforest
   {

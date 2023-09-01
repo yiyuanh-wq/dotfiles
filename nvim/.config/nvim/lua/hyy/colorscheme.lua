@@ -1,1 +1,1 @@
-vim.cmd("colorscheme onelight")
+vim.cmd("colorscheme edge")
