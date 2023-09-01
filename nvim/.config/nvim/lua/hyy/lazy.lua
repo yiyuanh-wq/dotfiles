@@ -39,7 +39,7 @@ require("lazy").setup({
   { "theprimeagen/harpoon" },
 
   -- Kanagawa
-  { "rebelot/kanagawa.nvim",    priority = 1000 },
+  { "rebelot/kanagawa.nvim",   priority = 1000 },
 
   -- LSP Signature
   { "ray-x/lsp_signature.nvim" },
@@ -69,6 +69,12 @@ require("lazy").setup({
 
   -- Numb
   { "nacro90/numb.nvim" },
+
+  -- Lazy
+  {
+    "olimorris/onedarkpro.nvim",
+    priority = 1000 -- Ensure it loads first
+  },
 
   -- Plenary
   { "nvim-lua/plenary.nvim" },
