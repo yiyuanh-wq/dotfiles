@@ -13,9 +13,6 @@ lsp.configure("lua_ls", {
 local cmp = require('cmp')
 
 cmp.setup({
-  mapping = {
-    ['<CR>'] = cmp.mapping.confirm({ select = false }),
-  }
 })
 
 lsp.set_preferences({

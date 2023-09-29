@@ -12,12 +12,15 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
-  -- Catppuccin
-  { "catppuccin/nvim",      name = "catppuccin", priority = 1000 },
+  -- COLORSCHEMES
 
-  -- Comment
-  { "numToStr/Comment.nvim" },
-  
+  -- Catppuccin
+  { "catppuccin/nvim",     name = "catppuccin", priority = 1000 },
+
+  -- Dracula
+  { "Mofiqul/dracula.nvim" },
+
+  -- Edge
   { "sainnhe/edge" },
 
   -- Everforest
@@ -34,14 +37,55 @@ require("lazy").setup({
     end,
   },
 
+  -- Github
+  { "projekt0n/github-nvim-theme" },
+
+  -- Gruvbox
+  { "sainnhe/gruvbox-material",         priority = 1000 },
+
+  -- Kanagawa
+  { "rebelot/kanagawa.nvim",            priority = 1000 },
+
+  -- Comment
+  { "numToStr/Comment.nvim" },
+
   -- Gitsigns
   { "lewis6991/gitsigns.nvim" },
 
   -- Harpoon
   { "theprimeagen/harpoon" },
 
-  -- Kanagawa
-  { "rebelot/kanagawa.nvim",   priority = 1000 },
+  -- Nord
+  { "shaunsingh/nord.nvim" },
+
+  -- Oxocarbon
+
+  { "nyoom-engineering/oxocarbon.nvim", priority = 1000 },
+
+  -- Rose Pine
+  { "rose-pine/neovim",                 name = "rose-pine" },
+
+  -- Solarized
+  { "ishan9299/nvim-solarized-lua" },
+
+  -- Sonokai
+  { "sainnhe/sonokai" },
+
+  -- Tokyo Night
+  {
+    "folke/tokyonight.nvim",
+    lazy = false,
+    priority = 1000,
+    opts = {},
+  },
+
+  -- VSCode
+  { "Mofiqul/vscode.nvim" },
+
+  -- USER PLUGINS
+
+  -- Auto Pairs
+  { "jiangmiao/auto-pairs" },
 
   -- LSP Signature
   { "ray-x/lsp_signature.nvim" },
@@ -69,20 +113,14 @@ require("lazy").setup({
     },
   },
 
+  -- Lualine
+  { "nvim-lualine/lualine.nvim" },
+
   -- Numb
   { "nacro90/numb.nvim" },
 
-  -- Lazy
-  {
-    "olimorris/onedarkpro.nvim",
-    priority = 1000 -- Ensure it loads first
-  },
-
   -- Plenary
   { "nvim-lua/plenary.nvim" },
-
-  -- Rose Pine
-  { "rose-pine/neovim",     name = "rose-pine" },
 
   -- Telescope
   {
@@ -97,13 +135,8 @@ require("lazy").setup({
     "cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release && cmake --install build --prefix build",
   },
 
-  -- Tokyo Night
-  {
-    "folke/tokyonight.nvim",
-    lazy = false,
-    priority = 1000,
-    opts = {},
-  },
+  -- Toggle Term
+  {'akinsho/toggleterm.nvim', version = "*", config = true},
 
   -- Treesitter
   { "nvim-treesitter/nvim-treesitter", build = ":TSUpdate" },
@@ -114,4 +147,7 @@ require("lazy").setup({
     dependencies = { "nvim-tree/nvim-web-devicons" },
     opts = {},
   },
+
+  -- Zen Mode
+  { "folke/zen-mode.nvim" },
 })
