@@ -135,9 +135,6 @@ require("lazy").setup({
     "cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release && cmake --install build --prefix build",
   },
 
-  -- Toggle Term
-  {'akinsho/toggleterm.nvim', version = "*", config = true},
-
   -- Treesitter
   { "nvim-treesitter/nvim-treesitter", build = ":TSUpdate" },
 
