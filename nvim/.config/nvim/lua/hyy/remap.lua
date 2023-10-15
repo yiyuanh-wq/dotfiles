@@ -1,10 +1,21 @@
-vim.g.mapleader = " "
-vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
+local opts = { noremap = true, silent = true }
 
-vim.keymap.set("n", "<leader>z", ":ZenMode<CR>")
+vim.g.mapleader = " "
+vim.keymap.set("n", "<leader>e", ":Lex 30<CR>", opts)
+
+vim.keymap.set("n", "<leader>z", ":ZenMode<CR>", opts)
 
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
+
+-- Stay in indent mode
+vim.keymap.set("v", "<", "<gv", opts)
+vim.keymap.set("v", ">", ">gv", opts)
+
+-- Navigate buffers
+vim.keymap.set("n", "<S-l>", ":bnext<CR>", opts)
+vim.keymap.set("n", "<S-h>", ":bprevious<CR>", opts)
+vim.keymap.set("n", "<C-x>", ":bdelete<CR>", opts)
 
 vim.keymap.set("n", "J", "mzJ`z")
 vim.keymap.set("n", "<C-d>", "<C-d>zz")

@@ -12,85 +12,15 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
-  -- COLORSCHEMES
-
-  -- Catppuccin
-  { "catppuccin/nvim",     name = "catppuccin", priority = 1000 },
-
-  -- Dracula
-  { "Mofiqul/dracula.nvim" },
-
-  -- Edge
-  { "sainnhe/edge" },
-
-  -- Everforest
-  {
-    "neanias/everforest-nvim",
-    version = false,
-    lazy = false,
-    priority = 1000, -- make sure to load this before all the other start plugins
-    -- Optional; default configuration will be used if setup isn't called.
-    config = function()
-      require("everforest").setup({
-        -- Your config here
-      })
-    end,
-  },
-
-  -- Github
-  { "projekt0n/github-nvim-theme" },
-
-  -- Gruvbox
-  { "sainnhe/gruvbox-material",         priority = 1000 },
-
-  -- Kanagawa
-  { "rebelot/kanagawa.nvim",            priority = 1000 },
-
-  -- Harpoon
-  { "theprimeagen/harpoon" },
-
-  -- Nord
-  { "shaunsingh/nord.nvim" },
-
-  -- Oxocarbon
-
-  { "nyoom-engineering/oxocarbon.nvim", priority = 1000 },
-
-  -- Rose Pine
-  { "rose-pine/neovim",                 name = "rose-pine" },
-
-  -- Solarized
-  { "ishan9299/nvim-solarized-lua" },
-
-  -- Sonokai
-  { "sainnhe/sonokai" },
-
-  -- Tokyo Night
-  {
-    "folke/tokyonight.nvim",
-    lazy = false,
-    priority = 1000,
-    opts = {},
-  },
-
-  -- VSCode
-  { "Mofiqul/vscode.nvim" },
-
-  -- USER PLUGINS
-
-  -- Auto Pairs
-  { "jiangmiao/auto-pairs" },
-
-  -- Comment
+  { 'akinsho/bufferline.nvim', version = "*", dependencies = 'nvim-tree/nvim-web-devicons' },
+  { 'windwp/nvim-autopairs' },
   { "numToStr/Comment.nvim" },
-
-  -- Gitsigns
+  { "theprimeagen/harpoon" },
+  { "hrsh7th/cmp-buffer" },
+  { "hrsh7th/cmp-nvim-lua" },
+  { "hrsh7th/cmp-path" },
   { "lewis6991/gitsigns.nvim" },
-
-  -- LSP Signature
   { "ray-x/lsp_signature.nvim" },
-
-  -- LSP Zero
   {
     "VonHeikemen/lsp-zero.nvim",
     branch = "v2.x",
@@ -98,7 +28,6 @@ require("lazy").setup({
       -- LSP Support
       { "neovim/nvim-lspconfig" }, -- Required
       {
-        -- Optional
         "williamboman/mason.nvim",
         build = function()
           pcall(vim.cmd, "MasonUpdate")
@@ -112,21 +41,23 @@ require("lazy").setup({
       { "L3MON4D3/LuaSnip" },     -- Required
     },
   },
-
-  -- Lualine
+  {
+    "kylechui/nvim-surround",
+    version = "*", -- Use for stability; omit to use `main` branch for the latest features
+    event = "VeryLazy",
+    config = function()
+      require("nvim-surround").setup({
+        -- Configuration here, or leave empty to use defaults
+      })
+    end
+  },
+  { "nyoom-engineering/oxocarbon.nvim", priority = 1000 },
   { "nvim-lualine/lualine.nvim" },
-
-  -- Numb
   { "nacro90/numb.nvim" },
-
-  -- Plenary
   { "nvim-lua/plenary.nvim" },
-
-  -- Telescope
   {
     "nvim-telescope/telescope.nvim",
     tag = "0.1.1",
-    -- or                              , branch = '0.1.1',
     dependencies = { "nvim-lua/plenary.nvim" },
   },
   {
@@ -134,13 +65,7 @@ require("lazy").setup({
     build =
     "cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release && cmake --install build --prefix build",
   },
-
-  -- Treesitter
-  { "nvim-treesitter/nvim-treesitter", build = ":TSUpdate" },
-
-  -- Web Devicons
-  {"nvim-tree/nvim-web-devicons"},
-
-  -- Zen Mode
+  { "nvim-treesitter/nvim-treesitter",            build = ":TSUpdate" },
+  { "nvim-treesitter/nvim-treesitter-textobjects" },
   { "folke/zen-mode.nvim" },
 })
