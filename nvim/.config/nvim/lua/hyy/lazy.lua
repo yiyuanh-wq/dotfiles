@@ -46,12 +46,6 @@ require("lazy").setup({
   -- Kanagawa
   { "rebelot/kanagawa.nvim",            priority = 1000 },
 
-  -- Comment
-  { "numToStr/Comment.nvim" },
-
-  -- Gitsigns
-  { "lewis6991/gitsigns.nvim" },
-
   -- Harpoon
   { "theprimeagen/harpoon" },
 
@@ -86,6 +80,12 @@ require("lazy").setup({
 
   -- Auto Pairs
   { "jiangmiao/auto-pairs" },
+
+  -- Comment
+  { "numToStr/Comment.nvim" },
+
+  -- Gitsigns
+  { "lewis6991/gitsigns.nvim" },
 
   -- LSP Signature
   { "ray-x/lsp_signature.nvim" },
@@ -138,12 +138,8 @@ require("lazy").setup({
   -- Treesitter
   { "nvim-treesitter/nvim-treesitter", build = ":TSUpdate" },
 
-  -- Trouble
-  {
-    "folke/trouble.nvim",
-    dependencies = { "nvim-tree/nvim-web-devicons" },
-    opts = {},
-  },
+  -- Web Devicons
+  {"nvim-tree/nvim-web-devicons"},
 
   -- Zen Mode
   { "folke/zen-mode.nvim" },
