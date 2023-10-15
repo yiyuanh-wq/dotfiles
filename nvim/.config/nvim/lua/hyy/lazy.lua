@@ -12,7 +12,7 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
-  { 'akinsho/bufferline.nvim', version = "*", dependencies = 'nvim-tree/nvim-web-devicons' },
+  { 'akinsho/bufferline.nvim', version = "*" },
   { 'windwp/nvim-autopairs' },
   { "numToStr/Comment.nvim" },
   { "theprimeagen/harpoon" },

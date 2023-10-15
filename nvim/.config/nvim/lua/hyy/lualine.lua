@@ -22,8 +22,8 @@ require('lualine').setup {
     lualine_b = {'branch', 'diff', 'diagnostics'},
     lualine_c = {},
     lualine_x = {},
-    lualine_y = {'filename'},
-    lualine_z = {'encoding'}
+    lualine_y = {},
+    lualine_z = {'location'}
   },
   inactive_sections = {
     lualine_a = {},
