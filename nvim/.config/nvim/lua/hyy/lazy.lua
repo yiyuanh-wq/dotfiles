@@ -12,7 +12,6 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
-  { 'akinsho/bufferline.nvim', version = "*" },
   { 'windwp/nvim-autopairs' },
   { "numToStr/Comment.nvim" },
   { "theprimeagen/harpoon" },

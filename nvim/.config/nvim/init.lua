@@ -6,7 +6,6 @@ require("hyy.remap")
 require("hyy.lazy")
 
 require("hyy.autopairs")
-require("hyy.bufferline")
 require("hyy.colorscheme")
 require("hyy.comment")
 require("hyy.gitsigns")
