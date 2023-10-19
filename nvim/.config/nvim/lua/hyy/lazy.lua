@@ -51,7 +51,6 @@ require("lazy").setup({
     end
   },
   { "nyoom-engineering/oxocarbon.nvim", priority = 1000 },
-  { "nvim-lualine/lualine.nvim" },
   { "nacro90/numb.nvim" },
   { "nvim-lua/plenary.nvim" },
   {
