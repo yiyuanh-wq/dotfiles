@@ -12,7 +12,6 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
-  { "ellisonleao/gruvbox.nvim", priority = 1000 , config = true, opts = ...},
   { 'windwp/nvim-autopairs' },
   { "numToStr/Comment.nvim" },
   { "theprimeagen/harpoon" },
