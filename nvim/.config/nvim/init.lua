@@ -1,5 +1,5 @@
-vim.g.netrw_banner = 0  -- Disables the Netrw banner. Press 'I' to toggle.
-vim.g.netrw_liststyle = 3  -- Sets the view to treeview.
+vim.g.netrw_banner = 0    -- Disables the Netrw banner. Press 'I' to toggle.
+vim.g.netrw_liststyle = 3 -- Sets the view to treeview.
 
 require("hyy.set")
 require("hyy.remap")
@@ -14,3 +14,4 @@ require("hyy.lsp")
 require("hyy.numb")
 require("hyy.telescope")
 require("hyy.treesitter")
+require("hyy.zen")
