@@ -12,7 +12,13 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
-  { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
+  {
+    "folke/tokyonight.nvim",
+    lazy = false,
+    priority = 1000,
+    opts = {},
+  },
+  { "catppuccin/nvim",         name = "catppuccin", priority = 1000 },
   { 'windwp/nvim-autopairs' },
   { "numToStr/Comment.nvim" },
   { "theprimeagen/harpoon" },
