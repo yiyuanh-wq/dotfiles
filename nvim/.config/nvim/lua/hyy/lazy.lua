@@ -12,6 +12,8 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
+  { 'kevinhwang91/nvim-ufo' },
+  { 'kevinhwang91/promise-async' },
   {
     "folke/tokyonight.nvim",
     lazy = false,
