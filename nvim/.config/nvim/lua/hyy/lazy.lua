@@ -12,8 +12,15 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
-  { 'kevinhwang91/nvim-ufo' },
-  { 'kevinhwang91/promise-async' },
+  { "sainnhe/edge" },
+  {
+    "neanias/everforest-nvim",
+    version = false,
+    lazy = false,
+    priority = 1000, -- make sure to load this before all the other start plugins
+  },
+  { "sainnhe/gruvbox-material" },
+  { "rebelot/kanagawa.nvim" },
   {
     "folke/tokyonight.nvim",
     lazy = false,
