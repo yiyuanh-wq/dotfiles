@@ -12,6 +12,7 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
+  { 'projekt0n/github-nvim-theme' },
   { "sainnhe/edge" },
   {
     "neanias/everforest-nvim",
