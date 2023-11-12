@@ -32,7 +32,7 @@ local cmp_select = {behavior = cmp.SelectBehavior.Select}
 
 cmp.setup({
   sources = {
-    {name = 'path'},
+    {name = 'buffer'},
     {name = 'nvim_lsp'},
     {name = 'nvim_lua'},
   },

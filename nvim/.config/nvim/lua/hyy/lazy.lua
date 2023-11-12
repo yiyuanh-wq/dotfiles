@@ -34,7 +34,6 @@ require("lazy").setup({
   { "theprimeagen/harpoon" },
   { "hrsh7th/cmp-buffer" },
   { "hrsh7th/cmp-nvim-lua" },
-  { "hrsh7th/cmp-path" },
   { "lewis6991/gitsigns.nvim" },
   { "ray-x/lsp_signature.nvim" },
   {
