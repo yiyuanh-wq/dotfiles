@@ -13,49 +13,10 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
   { 'projekt0n/github-nvim-theme' },
-  { "sainnhe/edge" },
-  {
-    "neanias/everforest-nvim",
-    version = false,
-    lazy = false,
-    priority = 1000, -- make sure to load this before all the other start plugins
-  },
-  { "sainnhe/gruvbox-material" },
-  { "rebelot/kanagawa.nvim" },
-  {
-    "folke/tokyonight.nvim",
-    lazy = false,
-    priority = 1000,
-    opts = {},
-  },
-  { "catppuccin/nvim",         name = "catppuccin", priority = 1000 },
   { 'windwp/nvim-autopairs' },
   { "numToStr/Comment.nvim" },
   { "theprimeagen/harpoon" },
-  { "hrsh7th/cmp-buffer" },
-  { "hrsh7th/cmp-nvim-lua" },
   { "lewis6991/gitsigns.nvim" },
-  { "ray-x/lsp_signature.nvim" },
-  {
-    "VonHeikemen/lsp-zero.nvim",
-    branch = "v2.x",
-    dependencies = {
-      -- LSP Support
-      { "neovim/nvim-lspconfig" }, -- Required
-      {
-        "williamboman/mason.nvim",
-        build = function()
-          pcall(vim.cmd, "MasonUpdate")
-        end,
-      },
-      { "williamboman/mason-lspconfig.nvim" }, -- Optional
-
-      -- Autocompletion
-      { "hrsh7th/nvim-cmp" },     -- Required
-      { "hrsh7th/cmp-nvim-lsp" }, -- Required
-      { "L3MON4D3/LuaSnip" },     -- Required
-    },
-  },
   {
     "kylechui/nvim-surround",
     version = "*", -- Use for stability; omit to use `main` branch for the latest features
@@ -66,8 +27,6 @@ require("lazy").setup({
       })
     end
   },
-  { "nyoom-engineering/oxocarbon.nvim", priority = 1000 },
-  { "nacro90/numb.nvim" },
   { "nvim-lua/plenary.nvim" },
   {
     "nvim-telescope/telescope.nvim",
@@ -81,5 +40,4 @@ require("lazy").setup({
   },
   { "nvim-treesitter/nvim-treesitter",            build = ":TSUpdate" },
   { "nvim-treesitter/nvim-treesitter-textobjects" },
-  { "folke/zen-mode.nvim" },
 })
