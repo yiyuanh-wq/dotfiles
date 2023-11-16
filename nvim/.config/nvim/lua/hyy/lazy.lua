@@ -12,6 +12,7 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
+  { "neovim/nvim-lspconfig" },
   { 'projekt0n/github-nvim-theme' },
   { 'windwp/nvim-autopairs' },
   { "numToStr/Comment.nvim" },

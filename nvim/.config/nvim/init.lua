@@ -4,11 +4,11 @@ vim.g.netrw_liststyle = 3 -- Sets the view to treeview.
 require("hyy.set")
 require("hyy.remap")
 require("hyy.lazy")
-
 require("hyy.autopairs")
 require("hyy.colorscheme")
 require("hyy.comment")
 require("hyy.gitsigns")
 require("hyy.harpoon")
+require("hyy.lsp")
 require("hyy.telescope")
 require("hyy.treesitter")
