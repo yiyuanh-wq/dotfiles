@@ -12,7 +12,13 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
-  { "yorickpeterse/vim-paper" },
+  {
+    "folke/trouble.nvim",
+    opts = {
+      icons = false
+    }
+  },
+  { "rebelot/kanagawa.nvim" },
   { "neovim/nvim-lspconfig" },
   { 'windwp/nvim-autopairs' },
   { "numToStr/Comment.nvim" },
