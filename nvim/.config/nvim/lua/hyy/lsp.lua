@@ -30,3 +30,7 @@ lsp.ocamllsp.setup({
 })
 
 lsp.solargraph.setup {}
+
+lsp.clangd.setup {}
+
+lsp.pyright.setup {}

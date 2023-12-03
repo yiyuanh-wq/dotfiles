@@ -1,1 +1,2 @@
-vim.cmd("colorscheme kanagawa-dragon")
+vim.opt.background = "light"
+vim.cmd("colorscheme melange")

@@ -12,13 +12,13 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
+  { "savq/melange-nvim" },
   {
     "folke/trouble.nvim",
     opts = {
       icons = false
     }
   },
-  { "rebelot/kanagawa.nvim" },
   { "neovim/nvim-lspconfig" },
   { 'windwp/nvim-autopairs' },
   { "numToStr/Comment.nvim" },
