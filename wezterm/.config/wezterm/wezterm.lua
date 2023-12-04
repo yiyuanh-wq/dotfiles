@@ -10,8 +10,9 @@ if wezterm.config_builder then
   config = wezterm.config_builder()
 end
 
+config.audible_bell = "Disabled"
 config.font = wezterm.font 'Liga SFMono Nerd Font'
-config.font_size = 22
+config.font_size = 20 
 
 config.color_scheme = 'melange_light'
 config.use_fancy_tab_bar = false
