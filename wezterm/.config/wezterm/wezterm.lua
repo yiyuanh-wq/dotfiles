@@ -23,15 +23,50 @@ config.disable_default_key_bindings = true
 
 config.keys = {
   {
-    key = 'C',
-    mods = 'CTRL',
+    key = 'c',
+    mods = 'CMD',
     action = wezterm.action.CopyTo 'Clipboard',
   },
   {
-    key = 'V',
-    mods = 'CTRL',
+    key = 'v',
+    mods = 'CMD',
     action = wezterm.action.PasteFrom 'Clipboard',
-  }
+  },
+  {
+    key = 'd',
+    mods = 'CTRL',
+    action = wezterm.action.CloseCurrentPane { confirm = true }
+  },
+  {
+    key = '"',
+    mods = 'CTRL|SHIFT',
+    action = wezterm.action.SplitVertical
+  },
+  {
+    key = '%',
+    mods = 'CTRL|SHIFT',
+    action = wezterm.action.SplitHorizontal
+  },
+  {
+    key = 'h',
+    mods = 'CTRL|SHIFT',
+    action = wezterm.action.ActivatePaneDirection 'Left',
+  },
+  {
+    key = 'l',
+    mods = 'CTRL|SHIFT',
+    action = wezterm.action.ActivatePaneDirection 'Right',
+  },
+  {
+    key = 'k',
+    mods = 'CTRL|SHIFT',
+    action = wezterm.action.ActivatePaneDirection 'Up',
+  },
+  {
+    key = 'j',
+    mods = 'CTRL|SHIFT',
+    action = wezterm.action.ActivatePaneDirection 'Down',
+  },
 }
 
 return config
