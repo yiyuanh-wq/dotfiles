@@ -1,2 +1,1 @@
-vim.opt.background = "dark"
-vim.cmd("colorscheme melange")
+vim.cmd("colorscheme paper")

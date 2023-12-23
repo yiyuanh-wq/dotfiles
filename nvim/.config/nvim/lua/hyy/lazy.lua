@@ -12,6 +12,7 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
+  {'yorickpeterse/vim-paper'},
   { "savq/melange-nvim" },
   {
     "folke/trouble.nvim",
