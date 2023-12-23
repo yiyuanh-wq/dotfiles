@@ -12,14 +12,12 @@ end
 
 config.audible_bell = "Disabled"
 config.font = wezterm.font 'Liga SFMono Nerd Font'
-config.font_size = 20 
+config.font_size = 22
 
-config.color_scheme = 'melange_light'
+config.color_scheme = 'paper'
 config.use_fancy_tab_bar = false
 config.enable_tab_bar = false
 config.window_decorations = "RESIZE"
-
-config.disable_default_key_bindings = true
 
 config.keys = {
   {
@@ -33,7 +31,7 @@ config.keys = {
     action = wezterm.action.PasteFrom 'Clipboard',
   },
   {
-    key = 'd',
+    key = 'W',
     mods = 'CTRL',
     action = wezterm.action.CloseCurrentPane { confirm = true }
   },
