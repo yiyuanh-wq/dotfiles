@@ -12,8 +12,8 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
-  {'yorickpeterse/vim-paper'},
-  { "savq/melange-nvim" },
+  { "miikanissi/modus-themes.nvim", priority = 1000 },
+  { 'yorickpeterse/vim-paper' },
   {
     "folke/trouble.nvim",
     opts = {
