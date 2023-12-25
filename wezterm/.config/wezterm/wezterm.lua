@@ -14,7 +14,7 @@ config.audible_bell = "Disabled"
 config.font = wezterm.font 'Liga SFMono Nerd Font'
 config.font_size = 22
 
-config.color_scheme = 'paper'
+config.color_scheme = 'Modus-Operandi-Tinted'
 config.use_fancy_tab_bar = false
 config.enable_tab_bar = false
 config.window_decorations = "RESIZE"
