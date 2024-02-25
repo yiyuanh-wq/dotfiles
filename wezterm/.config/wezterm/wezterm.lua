@@ -12,9 +12,9 @@ end
 
 config.audible_bell = "Disabled"
 config.font = wezterm.font 'Liga SFMono Nerd Font'
-config.font_size = 22
+config.font_size = 17
 
-config.color_scheme = 'Modus-Operandi-Tinted'
+config.color_scheme = 'Catppuccin Latte'
 config.use_fancy_tab_bar = false
 config.enable_tab_bar = false
 config.window_decorations = "RESIZE"
@@ -65,6 +65,10 @@ config.keys = {
     mods = 'CTRL|SHIFT',
     action = wezterm.action.ActivatePaneDirection 'Down',
   },
+  -- Make Option-Left equivalent to Alt-b which many line editors interpret as backward-word
+  { key = "LeftArrow", mods = "OPT", action = wezterm.action { SendString = "\x1bb" } },
+  -- Make Option-Right equivalent to Alt-f; forward-word
+  { key = "RightArrow", mods = "OPT", action = wezterm.action { SendString = "\x1bf" } },
 }
 
 return config
