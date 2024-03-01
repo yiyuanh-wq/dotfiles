@@ -12,17 +12,14 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
-  { "sainnhe/edge" },
-  { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
-  {
-    "folke/tokyonight.nvim",
-    lazy = false,
-    priority = 1000,
-    opts = {},
-  },
-  { 'shaunsingh/nord.nvim' },
-  { 'savq/melange-nvim' },
-  { 'yorickpeterse/vim-paper' },
+  { "catppuccin/nvim",          name = "catppuccin", priority = 1000 },
+  { 'L3MON4D3/LuaSnip' },
+  { 'hrsh7th/nvim-cmp' },
+  { 'hrsh7th/cmp-buffer' },
+  { 'hrsh7th/cmp-path' },
+  { 'saadparwaiz1/cmp_luasnip' },
+  { 'hrsh7th/cmp-nvim-lsp' },
+  { 'hrsh7th/cmp-nvim-lua' },
   { 'nvim-lualine/lualine.nvim' },
   {
     "folke/trouble.nvim",
