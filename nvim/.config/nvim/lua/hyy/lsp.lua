@@ -76,31 +76,23 @@ local cmp = require('cmp')
 
 cmp.setup({
   sources = {
-    { name = 'nvim_lsp' },
-    { name = 'nvim_lua' },
-    { name = 'buffer' },
+    {
+      name = 'nvim_lsp',
+      entry_filter = function(entry, ctx)
+        return require('cmp.types').lsp.CompletionItemKind[entry:get_kind()] ~= 'Text'
+      end
+    },
+    {
+      name = 'buffer',
+    },
     { name = 'path' },
-    { name = 'luasnip'},
   },
   mapping = {
+    ['<C-p>'] = cmp.mapping.select_prev_item({ behavior = 'select' }),
+    ['<C-n>'] = cmp.mapping.select_next_item({ behavior = 'select' }),
     ['<C-y>'] = cmp.mapping.confirm({ select = true }),
+    ["<C-Space>"] = cmp.mapping.complete(),
     ['<C-e>'] = cmp.mapping.abort(),
-    ['<Up>'] = cmp.mapping.select_prev_item({ behavior = 'select' }),
-    ['<Down>'] = cmp.mapping.select_next_item({ behavior = 'select' }),
-    ['<C-p>'] = cmp.mapping(function()
-      if cmp.visible() then
-        cmp.select_prev_item({ behavior = 'insert' })
-      else
-        cmp.complete()
-      end
-    end),
-    ['<C-n>'] = cmp.mapping(function()
-      if cmp.visible() then
-        cmp.select_next_item({ behavior = 'insert' })
-      else
-        cmp.complete()
-      end
-    end),
   },
   snippet = {
     expand = function(args)

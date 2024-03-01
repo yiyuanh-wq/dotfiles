@@ -13,14 +13,18 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
   { "catppuccin/nvim",          name = "catppuccin", priority = 1000 },
-  { 'L3MON4D3/LuaSnip' },
   { 'hrsh7th/nvim-cmp' },
   { 'hrsh7th/cmp-buffer' },
   { 'hrsh7th/cmp-path' },
-  { 'saadparwaiz1/cmp_luasnip' },
   { 'hrsh7th/cmp-nvim-lsp' },
-  { 'hrsh7th/cmp-nvim-lua' },
   { 'nvim-lualine/lualine.nvim' },
+  {
+    "L3MON4D3/LuaSnip",
+    -- follow latest release.
+    version = "v2.*", -- Replace <CurrentMajor> by the latest released major (first number of latest release)
+    -- install jsregexp (optional!).
+    build = "make install_jsregexp"
+  },
   {
     "folke/trouble.nvim",
     opts = {
