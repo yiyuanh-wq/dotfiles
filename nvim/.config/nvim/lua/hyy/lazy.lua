@@ -13,6 +13,7 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
   { "catppuccin/nvim",          name = "catppuccin", priority = 1000 },
+  { 'hrsh7th/cmp-nvim-lua' },
   { 'hrsh7th/nvim-cmp' },
   { 'hrsh7th/cmp-buffer' },
   { 'hrsh7th/cmp-path' },

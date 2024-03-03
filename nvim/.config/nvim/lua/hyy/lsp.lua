@@ -37,6 +37,8 @@ lsp.pyright.setup {}
 
 lsp.jdtls.setup {}
 
+lsp.tsserver.setup {}
+
 -- Global mappings.
 -- See `:help vim.diagnostic.*` for documentation on any of the below functions
 vim.keymap.set('n', 'gl', '<cmd>lua vim.diagnostic.open_float()<cr>')
@@ -82,9 +84,8 @@ cmp.setup({
         return require('cmp.types').lsp.CompletionItemKind[entry:get_kind()] ~= 'Text'
       end
     },
-    {
-      name = 'buffer',
-    },
+    { name = 'nvim_lua' },
+    { name = 'buffer' },
     { name = 'path' },
   },
   mapping = {
