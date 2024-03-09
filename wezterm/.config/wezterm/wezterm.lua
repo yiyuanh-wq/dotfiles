@@ -14,10 +14,11 @@ config.audible_bell = "Disabled"
 config.font = wezterm.font 'Liga SFMono Nerd Font'
 config.font_size = 17
 
-config.color_scheme = 'Catppuccin Latte'
+config.color_scheme = 'rose-pine'
 config.use_fancy_tab_bar = false
 config.enable_tab_bar = false
 config.window_decorations = "RESIZE"
+config.force_reverse_video_cursor = true
 
 config.keys = {
   {
@@ -29,11 +30,6 @@ config.keys = {
     key = 'v',
     mods = 'CMD',
     action = wezterm.action.PasteFrom 'Clipboard',
-  },
-  {
-    key = 'W',
-    mods = 'CTRL',
-    action = wezterm.action.CloseCurrentPane { confirm = true }
   },
   {
     key = '"',
