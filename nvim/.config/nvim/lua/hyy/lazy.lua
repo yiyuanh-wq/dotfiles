@@ -12,8 +12,7 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
-  { 'shaunsingh/solarized.nvim' },
-  { 'junegunn/seoul256.vim' },
+  { 'rebelot/kanagawa.nvim' },
   { "catppuccin/nvim",          name = "catppuccin", priority = 1000 },
   { 'hrsh7th/cmp-nvim-lua' },
   { 'hrsh7th/nvim-cmp' },

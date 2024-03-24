@@ -7,7 +7,7 @@ cursor_border = "#C8C093"
 selection_fg = "#C8C093"
 selection_bg = "#2D4F67"
 scrollbar_thumb = '#16161D'
-split = '#16161D'
+split = '#CCCCCC'
 ansi = [
   "#0D0C0C",
   "#C4746E",
