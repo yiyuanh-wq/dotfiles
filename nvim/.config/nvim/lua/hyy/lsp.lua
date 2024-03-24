@@ -86,7 +86,6 @@ cmp.setup({
     },
     { name = 'nvim_lua' },
     { name = 'buffer' },
-    { name = 'path' },
   },
   mapping = {
     ['<C-p>'] = cmp.mapping.select_prev_item({ behavior = 'select' }),
