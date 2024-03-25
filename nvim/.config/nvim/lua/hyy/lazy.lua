@@ -12,6 +12,7 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
+  { 'savq/melange-nvim' },
   { 'folke/tokyonight.nvim' },
   { 'rebelot/kanagawa.nvim' },
   { "catppuccin/nvim",          name = "catppuccin", priority = 1000 },
