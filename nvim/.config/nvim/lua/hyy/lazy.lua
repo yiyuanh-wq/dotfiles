@@ -12,10 +12,11 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
+  { 'nyoom-engineering/oxocarbon.nvim' },
   { 'savq/melange-nvim' },
   { 'folke/tokyonight.nvim' },
   { 'rebelot/kanagawa.nvim' },
-  { "catppuccin/nvim",          name = "catppuccin", priority = 1000 },
+  { "catppuccin/nvim",                 name = "catppuccin", priority = 1000 },
   { 'hrsh7th/cmp-nvim-lua' },
   { 'hrsh7th/nvim-cmp' },
   { 'hrsh7th/cmp-buffer' },
