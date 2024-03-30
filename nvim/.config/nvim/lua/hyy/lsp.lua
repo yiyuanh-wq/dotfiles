@@ -39,6 +39,8 @@ lsp.jdtls.setup {}
 
 lsp.tsserver.setup {}
 
+lsp.gopls.setup {}
+
 -- Global mappings.
 -- See `:help vim.diagnostic.*` for documentation on any of the below functions
 vim.keymap.set('n', 'gl', '<cmd>lua vim.diagnostic.open_float()<cr>')

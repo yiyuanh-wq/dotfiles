@@ -12,6 +12,7 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
+  { 'Vimjas/vim-python-pep8-indent' },
   { 'nyoom-engineering/oxocarbon.nvim' },
   { 'savq/melange-nvim' },
   { 'folke/tokyonight.nvim' },
