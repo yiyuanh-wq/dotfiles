@@ -49,7 +49,10 @@ config.keys = {
   {
     key = '%',
     mods = 'CTRL|SHIFT',
-    action = wezterm.action.SplitHorizontal
+    action = wezterm.action.SplitPane {
+      direction = 'Down',
+      size = { Percent = 50 }
+    }
   },
   {
     key = 'h',
