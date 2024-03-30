@@ -12,7 +12,7 @@ end
 
 config.audible_bell = "Disabled"
 config.font = wezterm.font 'Liga SFMono Nerd Font'
-config.font_size = 17
+config.font_size = 16
 
 config.color_scheme = "Oxocarbon Dark (Gogh)"
 config.use_fancy_tab_bar = false
