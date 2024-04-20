@@ -14,16 +14,17 @@ config.audible_bell = "Disabled"
 config.font = wezterm.font 'Liga SFMono Nerd Font'
 config.font_size = 16
 
-config.color_scheme = "Kanagawa (Gogh)"
+config.color_scheme = "Tokyo Night Moon"
 config.use_fancy_tab_bar = false
-config.enable_tab_bar = false
+config.enable_tab_bar = true
+config.tab_bar_at_bottom = true
 config.window_decorations = "RESIZE"
 config.force_reverse_video_cursor = true
 
 config.window_padding = {
-  left = 0,
+  left = 8,
   right = 0,
-  top = 0,
+  top = 8,
   bottom = 0
 }
 
@@ -79,5 +80,13 @@ config.keys = {
   -- Make Option-Right equivalent to Alt-f; forward-word
   { key = "RightArrow", mods = "OPT", action = wezterm.action { SendString = "\x1bf" } },
 }
+
+for i = 1, 8 do
+  table.insert(config.keys, {
+    key = tostring(i),
+    mods = 'CMD|SHIFT',
+    action = wezterm.action.ActivateTab(i - 1),
+  })
+end
 
 return config
