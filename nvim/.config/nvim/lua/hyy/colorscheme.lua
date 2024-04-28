@@ -1,2 +1,1 @@
--- setup must be called before loading
-vim.cmd("colorscheme tokyonight-moon")
+vim.cmd("colorscheme tokyonight-day")

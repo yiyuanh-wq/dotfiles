@@ -12,6 +12,12 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
+  {
+    "neanias/everforest-nvim",
+    version = false,
+    lazy = false,
+    priority = 1000, -- make sure to load this before all the other start plugins
+  },
   { 'Vimjas/vim-python-pep8-indent' },
   { 'nyoom-engineering/oxocarbon.nvim' },
   { 'savq/melange-nvim' },
