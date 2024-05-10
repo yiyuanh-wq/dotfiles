@@ -12,6 +12,7 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
+  { "rose-pine/neovim",                name = "rose-pine" },
   {
     "neanias/everforest-nvim",
     version = false,

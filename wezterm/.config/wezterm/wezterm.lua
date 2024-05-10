@@ -12,22 +12,17 @@ end
 
 config.audible_bell = "Disabled"
 config.font = wezterm.font 'Liga SFMono Nerd Font'
-config.font_size = 18
+config.font_size = 20
 
-config.color_scheme = "Tokyo Night Day"
+
+config.color_scheme = "Tokyo Night Moon"
+
 config.use_fancy_tab_bar = false
 config.enable_tab_bar = true
 config.tab_bar_at_bottom = true
 config.window_decorations = "RESIZE"
 config.force_reverse_video_cursor = true
 config.debug_key_events = true
-
-config.window_padding = {
-  left = 0,
-  right = 0,
-  top = 0,
-  bottom = 0
-}
 
 config.keys = {
   {
@@ -106,7 +101,7 @@ function recompute_padding(window)
     end
     overrides.window_padding = nil
   else
-    local center_size = math.floor(window_dims.pixel_width / 8)
+    local center_size = math.floor(window_dims.pixel_width / 6)
     local new_padding = {
       left = center_size,
       right = center_size,

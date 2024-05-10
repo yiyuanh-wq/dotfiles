@@ -25,19 +25,19 @@ lsp.lua_ls.setup {
   }
 }
 
-lsp.ocamllsp.setup({
-  root_dir = lsp.util.root_pattern("*.opam", "esy.json", "package.json", ".git", "dune-project", "dune-workspace", "*.ml"),
-})
+-- lsp.ocamllsp.setup({
+--   root_dir = lsp.util.root_pattern("*.opam", "esy.json", "package.json", ".git", "dune-project", "dune-workspace", "*.ml"),
+-- })
 
-lsp.solargraph.setup {}
+-- lsp.solargraph.setup {}
 
-lsp.pyright.setup {}
+-- lsp.pyright.setup {}
 
-lsp.jdtls.setup {}
+-- lsp.jdtls.setup {}
 
-lsp.tsserver.setup {}
+-- lsp.tsserver.setup {}
 
-lsp.gopls.setup {}
+-- lsp.gopls.setup {}
 
 -- Global mappings.
 -- See `:help vim.diagnostic.*` for documentation on any of the below functions
