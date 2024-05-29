@@ -14,8 +14,7 @@ config.audible_bell = "Disabled"
 config.font = wezterm.font 'Liga SFMono Nerd Font'
 config.font_size = 20
 
-
-config.color_scheme = "Tokyo Night Moon"
+config.color_scheme = "dayfox"
 
 config.use_fancy_tab_bar = false
 config.enable_tab_bar = true
