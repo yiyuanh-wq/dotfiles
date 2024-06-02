@@ -12,7 +12,7 @@ end
 
 config.audible_bell = "Disabled"
 config.font = wezterm.font 'Liga SFMono Nerd Font'
-config.font_size = 20
+config.font_size = 22
 
 config.color_scheme = "dayfox"
 
