@@ -1,1 +1,1 @@
-vim.cmd("colorscheme dayfox")
+require('bamboo').load()

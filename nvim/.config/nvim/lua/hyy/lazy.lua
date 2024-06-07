@@ -12,6 +12,11 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
+  {
+    'ribru17/bamboo.nvim',
+    lazy = false,
+    priority = 1000,
+  },
   { "EdenEast/nightfox.nvim" },
   {
     "gbprod/nord.nvim",

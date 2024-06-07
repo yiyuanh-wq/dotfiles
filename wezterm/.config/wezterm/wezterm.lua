@@ -11,10 +11,10 @@ if wezterm.config_builder then
 end
 
 config.audible_bell = "Disabled"
-config.font = wezterm.font 'Liga SFMono Nerd Font'
-config.font_size = 22
+config.font = wezterm.font "JetBrains Mono"
+config.font_size = 20
 
-config.color_scheme = "dayfox"
+config.color_scheme = "bamboo"
 
 config.use_fancy_tab_bar = false
 config.enable_tab_bar = true
