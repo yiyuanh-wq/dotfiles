@@ -12,9 +12,9 @@ end
 
 config.audible_bell = "Disabled"
 config.font = wezterm.font "JetBrains Mono"
-config.font_size = 20
+config.font_size = 22
 
-config.color_scheme = "bamboo"
+config.color_scheme = "bamboo_dark"
 
 config.use_fancy_tab_bar = false
 config.enable_tab_bar = true

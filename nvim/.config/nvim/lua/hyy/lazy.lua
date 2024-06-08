@@ -12,6 +12,7 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
+  { 'stevearc/oil.nvim' },
   {
     'ribru17/bamboo.nvim',
     lazy = false,
