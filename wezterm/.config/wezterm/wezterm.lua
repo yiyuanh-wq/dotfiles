@@ -1,6 +1,8 @@
 -- Pull in the wezterm API
 local wezterm = require 'wezterm'
 
+local sessionizer = require("sessionizer")
+
 -- This table will hold the configuration.
 local config = {}
 
@@ -11,13 +13,13 @@ if wezterm.config_builder then
 end
 
 config.audible_bell = "Disabled"
-config.font = wezterm.font "JetBrains Mono"
-config.font_size = 32
+config.font = wezterm.font "MonoLisa"
+config.font_size = 21
 
-config.color_scheme = "bamboo"
+config.color_scheme = "Solarized Dark (Gogh)"
 
 config.use_fancy_tab_bar = false
-config.enable_tab_bar = true
+config.enable_tab_bar = false
 config.tab_bar_at_bottom = true
 config.window_decorations = "RESIZE"
 config.force_reverse_video_cursor = true
@@ -87,6 +89,7 @@ config.keys = {
     mods = 'ALT',
     action = wezterm.action.ShowLauncherArgs { flags = 'WORKSPACES' }
   },
+  { key = "f", mods = "CTRL|SHIFT", action = wezterm.action_callback(sessionizer.toggle) },
 }
 
 function recompute_padding(window)

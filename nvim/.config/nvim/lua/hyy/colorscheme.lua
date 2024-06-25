@@ -1,1 +1,1 @@
-require('bamboo').load()
+vim.cmd("colorscheme solarized")
