@@ -12,6 +12,7 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
+  { "ellisonleao/gruvbox.nvim" },
   { 'maxmx03/solarized.nvim' },
   { 'stevearc/oil.nvim' },
   {

@@ -13,10 +13,10 @@ if wezterm.config_builder then
 end
 
 config.audible_bell = "Disabled"
-config.font = wezterm.font "MonoLisa"
-config.font_size = 21
+config.font = wezterm.font "PragmataPro Mono"
+config.font_size = 20
 
-config.color_scheme = "Solarized Dark (Gogh)"
+config.color_scheme = "Solarized Light (Gogh)"
 
 config.use_fancy_tab_bar = false
 config.enable_tab_bar = false
@@ -90,6 +90,8 @@ config.keys = {
     action = wezterm.action.ShowLauncherArgs { flags = 'WORKSPACES' }
   },
   { key = "f", mods = "CTRL|SHIFT", action = wezterm.action_callback(sessionizer.toggle) },
+  { key = "=", mods = "CMD",        action = wezterm.action.DisableDefaultAssignment },
+  { key = "-", mods = "CMD",        action = wezterm.action.DisableDefaultAssignment }
 }
 
 function recompute_padding(window)
@@ -103,7 +105,7 @@ function recompute_padding(window)
     end
     overrides.window_padding = nil
   else
-    local center_size = math.floor(window_dims.pixel_width / 6)
+    local center_size = math.floor(window_dims.pixel_width / 4)
     local new_padding = {
       left = center_size,
       right = center_size,

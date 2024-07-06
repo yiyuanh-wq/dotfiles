@@ -17,7 +17,8 @@ M.toggle = function(window, pane)
     "--max-depth=4",
     rootPath,
     -- add more paths here
-    "/Users/hyy/Dotfiles"
+    "/Users/hyy/Dotfiles",
+    "/Users/hyy/rustlings"
   })
 
   if not success then
