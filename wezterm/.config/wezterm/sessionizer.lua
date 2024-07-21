@@ -18,7 +18,8 @@ M.toggle = function(window, pane)
     rootPath,
     -- add more paths here
     "/Users/hyy/Dotfiles",
-    "/Users/hyy/rustlings"
+    "/Users/hyy/rustlings",
+    "/Users/hyy/Notes"
   })
 
   if not success then

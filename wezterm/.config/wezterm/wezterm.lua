@@ -14,9 +14,9 @@ end
 
 config.audible_bell = "Disabled"
 config.font = wezterm.font "PragmataPro Mono"
-config.font_size = 20
+config.font_size = 18
 
-config.color_scheme = "Solarized Light (Gogh)"
+config.color_scheme = "Kanagawa (Gogh)"
 
 config.use_fancy_tab_bar = false
 config.enable_tab_bar = false

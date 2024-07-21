@@ -12,34 +12,9 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
-  { "ellisonleao/gruvbox.nvim" },
-  { 'maxmx03/solarized.nvim' },
+  { "rebelot/kanagawa.nvim" },
   { 'stevearc/oil.nvim' },
-  {
-    'ribru17/bamboo.nvim',
-    lazy = false,
-    priority = 1000,
-  },
-  { "EdenEast/nightfox.nvim" },
-  {
-    "gbprod/nord.nvim",
-    lazy = false,
-    priority = 1000,
-  },
-  { 'yorickpeterse/vim-paper' },
-  { "rose-pine/neovim",       name = "rose-pine" },
-  {
-    "neanias/everforest-nvim",
-    version = false,
-    lazy = false,
-    priority = 1000, -- make sure to load this before all the other start plugins
-  },
   { 'Vimjas/vim-python-pep8-indent' },
-  { 'nyoom-engineering/oxocarbon.nvim' },
-  { 'savq/melange-nvim' },
-  { 'folke/tokyonight.nvim' },
-  { 'rebelot/kanagawa.nvim' },
-  { "catppuccin/nvim",                 name = "catppuccin", priority = 1000 },
   { 'hrsh7th/cmp-nvim-lua' },
   { 'hrsh7th/nvim-cmp' },
   { 'hrsh7th/cmp-buffer' },
