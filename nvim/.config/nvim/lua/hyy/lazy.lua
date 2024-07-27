@@ -12,6 +12,7 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
+  { "catppuccin/nvim",              name = "catppuccin", priority = 1000 },
   { "rebelot/kanagawa.nvim" },
   { 'stevearc/oil.nvim' },
   { 'Vimjas/vim-python-pep8-indent' },
@@ -29,8 +30,12 @@ require("lazy").setup({
   },
   {
     "folke/trouble.nvim",
-    opts = {
-      icons = false
+    cmd = "Trouble",
+    keys = {
+      {
+        "<C-\\>",
+        "<cmd>Trouble diagnostics toggle focus=true<cr>",
+      }
     }
   },
   { "neovim/nvim-lspconfig" },
