@@ -12,15 +12,19 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
-  { "catppuccin/nvim",              name = "catppuccin", priority = 1000 },
+  {
+    "catppuccin/nvim",
+    name = "catppuccin",
+    priority = 1000
+  },
   { "rebelot/kanagawa.nvim" },
-  { 'stevearc/oil.nvim' },
-  { 'Vimjas/vim-python-pep8-indent' },
-  { 'hrsh7th/cmp-nvim-lua' },
-  { 'hrsh7th/nvim-cmp' },
-  { 'hrsh7th/cmp-buffer' },
-  { 'hrsh7th/cmp-nvim-lsp' },
-  { 'nvim-lualine/lualine.nvim' },
+  { "stevearc/oil.nvim" },
+  { "Vimjas/vim-python-pep8-indent" },
+  { "hrsh7th/cmp-nvim-lua" },
+  { "hrsh7th/nvim-cmp" },
+  { "hrsh7th/cmp-buffer" },
+  { "hrsh7th/cmp-nvim-lsp" },
+  { "nvim-lualine/lualine.nvim" },
   {
     "L3MON4D3/LuaSnip",
     -- follow latest release.
@@ -39,20 +43,10 @@ require("lazy").setup({
     }
   },
   { "neovim/nvim-lspconfig" },
-  { 'windwp/nvim-autopairs' },
+  { "windwp/nvim-autopairs" },
   { "numToStr/Comment.nvim" },
   { "theprimeagen/harpoon" },
   { "lewis6991/gitsigns.nvim" },
-  {
-    "kylechui/nvim-surround",
-    version = "*", -- Use for stability; omit to use `main` branch for the latest features
-    event = "VeryLazy",
-    config = function()
-      require("nvim-surround").setup({
-        -- Configuration here, or leave empty to use defaults
-      })
-    end
-  },
   { "nvim-lua/plenary.nvim" },
   {
     "nvim-telescope/telescope.nvim",

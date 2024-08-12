@@ -19,7 +19,7 @@ M.toggle = function(window, pane)
     -- add more paths here
     "/Users/hyy/Dotfiles",
     "/Users/hyy/rustlings",
-    "/Users/hyy/Notes"
+    "/Users/hyy/Documents/Obsidian Vault"
   })
 
   if not success then
