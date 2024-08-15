@@ -13,11 +13,11 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
   {
-    "catppuccin/nvim",
-    name = "catppuccin",
-    priority = 1000
+    "folke/tokyonight.nvim",
+    lazy = false,
+    priority = 1000,
+    opts = {},
   },
-  { "rebelot/kanagawa.nvim" },
   { "stevearc/oil.nvim" },
   { "Vimjas/vim-python-pep8-indent" },
   { "hrsh7th/cmp-nvim-lua" },

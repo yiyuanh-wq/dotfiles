@@ -16,7 +16,7 @@ config.audible_bell = "Disabled"
 config.font = wezterm.font "Liga SFMono Nerd Font"
 config.font_size = 18
 
-config.color_scheme = "Catppuccin Frappe"
+config.color_scheme = "Tokyo Night Moon"
 
 config.use_fancy_tab_bar = false
 config.enable_tab_bar = true
@@ -88,7 +88,9 @@ config.keys = {
   },
   { key = "f", mods = "LEADER", action = wezterm.action_callback(sessionizer.toggle) },
   { key = "=", mods = "CMD",    action = wezterm.action.DisableDefaultAssignment },
-  { key = "-", mods = "CMD",    action = wezterm.action.DisableDefaultAssignment }
+  { key = "-", mods = "CMD",    action = wezterm.action.DisableDefaultAssignment },
+  { key = "=", mods = "CTRL",    action = wezterm.action.DisableDefaultAssignment },
+  { key = "-", mods = "CTRL",    action = wezterm.action.DisableDefaultAssignment },
 }
 
 function recompute_padding(window)

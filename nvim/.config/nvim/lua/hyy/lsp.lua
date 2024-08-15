@@ -35,7 +35,7 @@ lsp.lua_ls.setup {
 
 -- lsp.jdtls.setup {}
 
--- lsp.tsserver.setup {}
+lsp.tsserver.setup {}
 
 -- lsp.gopls.setup {}
 
