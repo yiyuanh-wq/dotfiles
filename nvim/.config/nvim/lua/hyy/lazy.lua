@@ -12,6 +12,13 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
+  { "rebelot/kanagawa.nvim" },
+  {
+    "sho-87/kanagawa-paper.nvim",
+    lazy = false,
+    priority = 1000,
+    opts = {},
+  },
   {
     "folke/tokyonight.nvim",
     lazy = false,
