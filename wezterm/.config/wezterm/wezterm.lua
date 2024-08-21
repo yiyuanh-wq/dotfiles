@@ -12,8 +12,15 @@ if wezterm.config_builder then
 	config = wezterm.config_builder()
 end
 
+config.window_padding = {
+	left = 12,
+	right = 12,
+	top = 4,
+	bottom = 4,
+}
+
 config.audible_bell = "Disabled"
-config.font = wezterm.font("JetBrains Mono")
+config.font = wezterm.font("MesloLGS NF")
 config.font_size = 18
 
 config.color_scheme = "Tokyo Night"
@@ -72,6 +79,11 @@ config.keys = {
 		key = "o",
 		mods = "LEADER",
 		action = "TogglePaneZoomState",
+	},
+	{
+		key = "r",
+		mods = "LEADER",
+		action = wezterm.action.RotatePanes("Clockwise"),
 	},
 	{
 		key = "c",
