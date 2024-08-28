@@ -12,7 +12,7 @@ export EDITOR='nvim'
 export MANPAGER='nvim +Man!'
 export MANWIDTH=999
 
-alias ls="lsd"
+alias ls="lsd --group-dirs first"
 alias vim="nvim"
 eval "$(zoxide init zsh)"
 
