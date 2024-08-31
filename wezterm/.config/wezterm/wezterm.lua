@@ -23,7 +23,7 @@ config.audible_bell = "Disabled"
 config.font = wezterm.font("MesloLGS NF")
 config.font_size = 16
 
-config.color_scheme = "Tokyo Night"
+config.color_scheme = "melange_light"
 
 config.use_fancy_tab_bar = false
 config.enable_tab_bar = true
