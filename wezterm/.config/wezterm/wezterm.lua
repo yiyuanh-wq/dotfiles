@@ -21,7 +21,7 @@ config.window_padding = {
 
 config.audible_bell = "Disabled"
 config.font = wezterm.font("MesloLGS NF")
-config.font_size = 16
+config.font_size = 18
 
 config.color_scheme = "melange_dark"
 
@@ -46,26 +46,6 @@ config.keys = {
         action = wezterm.action({ SendString = "\x01" }),
     },
     {
-        key = "-",
-        mods = "LEADER",
-        action = wezterm.action({ SplitVertical = { domain = "CurrentPaneDomain" } }),
-    },
-    {
-        key = "\\",
-        mods = "LEADER",
-        action = wezterm.action({ SplitHorizontal = { domain = "CurrentPaneDomain" } }),
-    },
-    {
-        key = "s",
-        mods = "LEADER",
-        action = wezterm.action({ SplitVertical = { domain = "CurrentPaneDomain" } }),
-    },
-    {
-        key = "v",
-        mods = "LEADER",
-        action = wezterm.action({ SplitHorizontal = { domain = "CurrentPaneDomain" } }),
-    },
-    {
         key = "%",
         mods = "LEADER",
         action = wezterm.action({ SplitVertical = { domain = "CurrentPaneDomain" } }),
@@ -81,14 +61,19 @@ config.keys = {
         action = "TogglePaneZoomState",
     },
     {
+        key = "0",
+        mods = "LEADER",
+        action = wezterm.action.PaneSelect { mode = "SwapWithActive" },
+    },
+    {
         key = "r",
         mods = "LEADER",
         action = wezterm.action.RotatePanes("Clockwise"),
     },
     {
-        key = "c",
+        key = "Enter",
         mods = "LEADER",
-        action = wezterm.action({ SpawnTab = "CurrentPaneDomain" }),
+        action = wezterm.action.ActivateCopyMode
     },
     {
         key = "h",
