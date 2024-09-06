@@ -20,8 +20,8 @@ config.window_padding = {
 }
 
 config.audible_bell = "Disabled"
-config.font = wezterm.font("MesloLGS NF")
-config.font_size = 18
+config.font = wezterm.font("Berkeley Mono")
+config.font_size = 19
 
 config.color_scheme = "Tokyo Night"
 
