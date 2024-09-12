@@ -9,13 +9,16 @@ TERM = "xterm-256color"
 osc52 = "OnlyCopy"
 
 [window]
-padding.x = 16
-padding.y = 14
+padding = { x = 4, y = 4 }
 decorations = "None"
 option_as_alt = "Both"
 
 [font]
-size = 20.0
+size = 18.0
 normal = { family = "Berkeley Mono", style = "Regular" }
 bold = { family = "Berkeley Mono", style = "Bold" }
 italic = { family = "Berkeley Mono", style = "Italic" }
+
+[cursor]
+style = { shape = "Block" }
+thickness = 1.0
