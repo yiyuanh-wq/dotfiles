@@ -45,10 +45,10 @@ bindsym $mod+Shift+p exec swaymsg output $laptop enable && swaymsg output $exter
 #
 # Example configuration:
 #
-# exec swayidle -w \
-#          timeout 300 'swaylock -f -c 000000' \
-#          timeout 600 'swaymsg "output * power off"' resume 'swaymsg "output * power on"' \
-#          before-sleep 'swaylock -f -c 000000'
+exec swayidle -w \
+         timeout 300 'swaylock -f -c 000000' \
+         timeout 600 'swaymsg "output * power off"' resume 'swaymsg "output * power on"' \
+         before-sleep 'swaylock -f -c 000000'
 #
 # This will lock your screen after 300 seconds of inactivity, then turn off
 # your displays after another 300 seconds, and turn your screens back on when
@@ -77,6 +77,9 @@ input "type:keyboard" {
 #
     # Start a terminal
     bindsym $mod+Return exec $term
+
+    # Lockscreen
+    bindsym $mod+Ctrl+q exec "swaylock -c 000000"
 
     # Kill focused window
     bindsym $mod+Shift+q kill
