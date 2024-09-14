@@ -4,6 +4,8 @@
 #
 # Read `man 5 sway` for a complete reference.
 
+font pango:BerkeleyMono, Noto Sans CJK KR, Noto Color Emoji 9
+
 ### Variables
 #
 # Logo key. Use Mod1 for Alt.
@@ -38,7 +40,6 @@ bindswitch --reload --locked lid:on output $laptop disable
 bindswitch --reload --locked lid:off output $laptop enable
 bindsym $mod+p exec swaymsg output $laptop disable && swaymsg output $external enable
 bindsym $mod+Shift+p exec swaymsg output $laptop enable && swaymsg output $external disable
-exec_always ~/.config/sway/scripts/clamshell.sh
 
 ### Idle configuration
 #
@@ -236,7 +237,8 @@ bar {
 
     # When the status_command prints a new line to stdout, swaybar updates.
     # The default just shows the current date and time.
-    status_command while date +'%Y-%m-%d %X'; do sleep 1; done
+
+    status_command ~/.config/sway/scripts/status.sh
 
     colors {
         statusline #ffffff
