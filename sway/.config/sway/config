@@ -236,6 +236,24 @@ bindsym XF86AudioMute exec wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle
 bindsym XF86MonBrightnessUp exec brightnessctl set +5%
 bindsym XF86MonBrightnessDown exec brightnessctl set 5%-
 
+# Color palette
+set $bg_dark    #1a1b26
+set $bg         #24283b
+set $fg         #c0caf5
+set $fg_dark    #a9b1d6
+set $blue       #7aa2f7
+set $cyan       #7dcfff
+set $green      #9ece6a
+set $orange     #ff9e64
+set $purple     #9d7cd8
+set $red        #f7768e
+
+# Window colors
+client.focused          $blue     $bg     $fg    $cyan   $blue
+client.focused_inactive $bg       $bg     $fg    $bg     $bg
+client.unfocused        $bg_dark  $bg_dark $fg_dark $bg_dark $bg_dark
+client.urgent           $red      $red    $fg    $red    $red
+
 #
 # Status Bar:
 #
@@ -249,9 +267,15 @@ bar {
     status_command ~/.config/sway/scripts/status.sh
 
     colors {
-        statusline #c0caf5
-        background #1a1b26
-        inactive_workspace #32323200 #32323200 #5c5c5c
+        background $bg_dark
+        statusline $fg
+        separator  $purple
+
+        focused_workspace  $blue  $blue  $bg_dark
+        active_workspace   $bg    $bg    $fg
+        inactive_workspace $bg_dark $bg_dark $fg_dark
+        urgent_workspace   $red   $red   $bg_dark
+        binding_mode       $orange $orange $bg_dark    
     }
 }
 

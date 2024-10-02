@@ -14,7 +14,7 @@ decorations = "None"
 option_as_alt = "Both"
 
 [font]
-size = 19.0
+size = 11.0
 normal = { family = "Berkeley Mono", style = "Regular" }
 bold = { family = "Berkeley Mono", style = "Bold" }
 italic = { family = "Berkeley Mono", style = "Italic" }
