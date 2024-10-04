@@ -1,23 +1,23 @@
-# Material Oceanic Alacritty Colors
+# Material Palenight Alacritty Colors
 # Default colors
 [colors.primary]
-background = '#0F111A'
-foreground = '#8F93A2'
+background = '#292D3E'
+foreground = '#A6ACCD'
 
 # Normal colors
 [colors.normal]
-black = '#0F111A'
-red = '#FF5370'
+black = '#292D3E'
+red = '#F07178'
 green = '#C3E88D'
 yellow = '#FFCB6B'
 blue = '#82AAFF'
 magenta = '#C792EA'
 cyan = '#89DDFF'
-white = '#FFFFFF'
+white = '#D0D0D0'
 
 # Bright colors
 [colors.bright]
-black = '#464B5D'
+black = '#434758'
 red = '#FF8B92'
 green = '#DDFFA7'
 yellow = '#FFE585'
