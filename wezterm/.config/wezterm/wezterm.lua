@@ -12,18 +12,11 @@ if wezterm.config_builder then
     config = wezterm.config_builder()
 end
 
-config.window_padding = {
-    left = 12,
-    right = 12,
-    top = 4,
-    bottom = 4,
-}
-
 config.audible_bell = "Disabled"
 config.font = wezterm.font("Berkeley Mono")
-config.font_size = 19
+config.font_size = 17
 
-config.color_scheme = "Tokyo Night"
+config.color_scheme = "Oxocarbon Dark (Gogh)"
 
 config.use_fancy_tab_bar = false
 config.enable_tab_bar = true
@@ -46,17 +39,17 @@ config.keys = {
         action = wezterm.action({ SendString = "\x01" }),
     },
     {
-        key = "%",
+        key = '"',
         mods = "LEADER",
         action = wezterm.action({ SplitVertical = { domain = "CurrentPaneDomain" } }),
     },
     {
-        key = '"',
+        key = "%",
         mods = "LEADER",
         action = wezterm.action({ SplitHorizontal = { domain = "CurrentPaneDomain" } }),
     },
     {
-        key = "o",
+        key = "z",
         mods = "LEADER",
         action = "TogglePaneZoomState",
     },
