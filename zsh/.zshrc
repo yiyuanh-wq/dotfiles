@@ -39,11 +39,10 @@ zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
 alias ls='ls --color'
 alias vim='nvim'
 
-eval "$(/home/ubuntu/.local/bin/mise activate zsh)"
-
 source $HOME/antigen.zsh
 antigen bundle zsh-users/zsh-autosuggestions
 antigen bundle zdharma-continuum/fast-syntax-highlighting
 antigen apply
 
 eval "$(zoxide init zsh)"
+eval "$(/home/yiyuanh/.local/bin/mise activate zsh)"
