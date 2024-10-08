@@ -1,5 +1,5 @@
 import = [
-    "~/.config/alacritty/themes/github-light.toml"
+    "~/.config/alacritty/themes/tokyo-day.toml"
 ]
 
 [env]
