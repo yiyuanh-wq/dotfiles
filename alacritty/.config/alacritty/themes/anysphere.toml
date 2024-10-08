@@ -1,0 +1,46 @@
+# Anysphere Dark Alacritty Colors
+# Default colors
+[colors.primary]
+background = '#181818'
+foreground = '#D6D6DD'
+
+# Normal colors
+[colors.normal]
+black = '#181818'
+red = '#C1808A'
+green = '#82D2CE'
+yellow = '#EBC88D'
+blue = '#94C1FA'
+magenta = '#E394DC'
+cyan = '#83D6C5'
+white = '#D6D6DD'
+
+# Bright colors
+[colors.bright]
+black = '#6D6D6D'
+red = '#C1808A'
+green = '#82D2CE'
+yellow = '#EBC88D'
+blue = '#94C1FA'
+magenta = '#E394DC'
+cyan = '#83D6C5'
+white = '#D6D6DD'
+
+# Cursor colors
+[colors.cursor]
+text = '#181818'
+cursor = '#D6D6DD'
+
+# Selection colors
+[colors.selection]
+text = '#D6D6DD'
+background = '#163761'
+
+# Indexed Colors
+[[colors.indexed_colors]]
+index = 16
+color = '#EFB080'
+
+[[colors.indexed_colors]]
+index = 17
+color = '#AAA0FA'
