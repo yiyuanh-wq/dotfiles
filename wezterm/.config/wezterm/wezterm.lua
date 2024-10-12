@@ -14,7 +14,7 @@ config.audible_bell = "Disabled"
 config.font = wezterm.font("Berkeley Mono")
 config.font_size = 17
 
-config.color_scheme = "Oxocarbon Dark (Gogh)"
+config.color_scheme = "Sequoia Moonlight"
 
 config.use_fancy_tab_bar = false
 config.enable_tab_bar = true
