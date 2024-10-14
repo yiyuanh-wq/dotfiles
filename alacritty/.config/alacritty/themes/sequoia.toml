@@ -1,0 +1,36 @@
+# Sequoia Moonlight Alacritty Colors
+# Default colors
+[colors.primary]
+background = "#0F1014"
+foreground = "#868690"
+
+[colors.cursor]
+cursor = "#c58fff"
+text = "#868690"
+
+# Normal colors
+[colors.normal]
+black = "#131317"
+red = "#f58ee0"
+green = "#8eb5f5"
+yellow = "#9898a6"
+blue = "#c58fff"
+magenta = "#fdfdfe"
+cyan = "#ffbb88"
+white = "#868690"
+
+# Bright colors
+[colors.bright]
+black = "#575861"
+red = "#f58ee0"
+green = "#8eb5f5"
+yellow = "#9898a6"
+blue = "#c58fff"
+magenta = "#fdfdfe"
+cyan = "#ffbb88"
+white = "#868690"
+
+# Selection colors
+[colors.selection]
+text = "#93939c"
+background = "#22222a"

@@ -21,7 +21,7 @@ set $term alacritty
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
 set $menu dmenu_path | wmenu | xargs swaymsg exec --
-set $background "/home/yiyuanh/wallpapers/arch.png"
+set $background "/home/yiyuanh/wallpapers/sakura.jpeg"
 
 ### Output configuration
 #
@@ -237,16 +237,16 @@ bindsym XF86MonBrightnessUp exec brightnessctl set +5%
 bindsym XF86MonBrightnessDown exec brightnessctl set 5%-
 
 # Color palette
-set $bg_dark    #1a1b26
-set $bg         #24283b
-set $fg         #c0caf5
-set $fg_dark    #a9b1d6
-set $blue       #7aa2f7
-set $cyan       #7dcfff
-set $green      #9ece6a
-set $orange     #ff9e64
-set $purple     #9d7cd8
-set $red        #f7768e
+set $bg_dark    #0F1014
+set $bg         #22222a
+set $fg         #868690
+set $fg_dark    #575861
+set $blue       #c58fff
+set $cyan       #ffbb88
+set $green      #8eb5f5
+set $orange     #ffbb88
+set $purple     #c58fff
+set $red        #f58ee0
 
 # Window colors
 client.focused          $blue     $bg     $fg    $cyan   $blue
@@ -275,7 +275,7 @@ bar {
         active_workspace   $bg    $bg    $fg
         inactive_workspace $bg_dark $bg_dark $fg_dark
         urgent_workspace   $red   $red   $bg_dark
-        binding_mode       $orange $orange $bg_dark    
+        binding_mode       $orange $orange $bg_dark     
     }
 }
 
