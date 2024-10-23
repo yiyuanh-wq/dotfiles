@@ -3,7 +3,7 @@ return {
     "EdenEast/nightfox.nvim",
     priority = 1000,
     init = function()
-      -- vim.cmd("colorscheme carbonfox")
+      vim.cmd("colorscheme nordfox")
     end,
   },
 }

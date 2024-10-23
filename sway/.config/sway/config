@@ -4,7 +4,7 @@
 #
 # Read `man 5 sway` for a complete reference.
 
-font pango:BerkeleyMono, Noto Sans CJK KR, Noto Color Emoji 9
+font pango:BerkeleyMono 11
 
 ### Variables
 #
@@ -21,7 +21,7 @@ set $term alacritty
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
 set $menu dmenu_path | wmenu | xargs swaymsg exec --
-set $background "/home/yiyuanh/wallpapers/sakura.jpeg"
+set $background "/home/yiyuanh/Pictures/ign_stuff.png"
 
 ### Output configuration
 #
@@ -236,46 +236,45 @@ bindsym XF86AudioMute exec wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle
 bindsym XF86MonBrightnessUp exec brightnessctl set +5%
 bindsym XF86MonBrightnessDown exec brightnessctl set 5%-
 
-# Color palette
-set $bg_dark    #0F1014
-set $bg         #22222a
-set $fg         #868690
-set $fg_dark    #575861
-set $blue       #c58fff
-set $cyan       #ffbb88
-set $green      #8eb5f5
-set $orange     #ffbb88
-set $purple     #c58fff
-set $red        #f58ee0
+# Nord color palette
+set $nord0  #2e3440
+set $nord1  #3b4252
+set $nord2  #434c5e
+set $nord3  #4c566a
+set $nord4  #d8dee9
+set $nord5  #e5e9f0
+set $nord6  #eceff4
+set $nord7  #8fbcbb
+set $nord8  #88c0d0
+set $nord9  #81a1c1
+set $nord10 #5e81ac
+set $nord11 #bf616a
+set $nord12 #d08770
+set $nord13 #ebcb8b
+set $nord14 #a3be8c
+set $nord15 #b48ead
 
 # Window colors
-client.focused          $blue     $bg     $fg    $cyan   $blue
-client.focused_inactive $bg       $bg     $fg    $bg     $bg
-client.unfocused        $bg_dark  $bg_dark $fg_dark $bg_dark $bg_dark
-client.urgent           $red      $red    $fg    $red    $red
+client.focused          $nord10 $nord10 $nord6  $nord8  $nord10
+client.focused_inactive $nord3  $nord1  $nord4  $nord3  $nord3
+client.unfocused       $nord1  $nord0  $nord4  $nord1  $nord1
+client.urgent          $nord11 $nord11 $nord6  $nord11 $nord11
 
-#
 # Status Bar:
-#
-# Read `man 5 sway-bar` for more information about this section.
 bar {
     position top
-
-    # When the status_command prints a new line to stdout, swaybar updates.
-    # The default just shows the current date and time.
-
     status_command ~/.config/sway/scripts/status.sh
 
     colors {
-        background $bg_dark
-        statusline $fg
-        separator  $purple
+        background $nord0
+        statusline $nord4
+        separator  $nord3
 
-        focused_workspace  $blue  $blue  $bg_dark
-        active_workspace   $bg    $bg    $fg
-        inactive_workspace $bg_dark $bg_dark $fg_dark
-        urgent_workspace   $red   $red   $bg_dark
-        binding_mode       $orange $orange $bg_dark     
+        focused_workspace  $nord10 $nord10 $nord6
+        active_workspace   $nord3  $nord3  $nord4
+        inactive_workspace $nord1  $nord1  $nord4
+        urgent_workspace   $nord11 $nord11 $nord6
+        binding_mode      $nord13 $nord13 $nord6
     }
 }
 
