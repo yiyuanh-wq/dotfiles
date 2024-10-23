@@ -264,6 +264,7 @@ client.urgent          $nord11 $nord11 $nord6  $nord11 $nord11
 bar {
     position top
     status_command ~/.config/sway/scripts/status.sh
+    tray_output none
 
     colors {
         background $nord0
