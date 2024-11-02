@@ -1,0 +1,78 @@
+[colors]
+ansi = [
+    "#2E3440", # nord0 - polar night (black)
+    "#BF616A", # nord11 - aurora (red)
+    "#A3BE8C", # nord14 - aurora (green)
+    "#EBCB8B", # nord13 - aurora (yellow)
+    "#5E81AC", # nord10 - frost (blue)
+    "#B48EAD", # nord15 - aurora (purple)
+    "#88C0D0", # nord8 - frost (cyan)
+    "#E5E9F0", # nord4 - snow storm (white)
+]
+background = "#2E3440" # nord0
+brights = [
+    "#4C566A", # nord3 - polar night (bright black)
+    "#BF616A", # nord11 - aurora (bright red)
+    "#A3BE8C", # nord14 - aurora (bright green)
+    "#EBCB8B", # nord13 - aurora (bright yellow)
+    "#81A1C1", # nord9 - frost (bright blue)
+    "#B48EAD", # nord15 - aurora (bright purple)
+    "#8FBCBB", # nord7 - frost (bright cyan)
+    "#ECEFF4", # nord6 - snow storm (bright white)
+]
+cursor_bg = "#ECEFF4"   # nord6
+cursor_border = "#ECEFF4" # nord6
+cursor_fg = "#2E3440"   # nord0
+foreground = "#D8DEE9"  # nord4
+scrollbar_thumb = "#3B4252" # nord1
+selection_bg = "#4C566A" # nord3
+selection_fg = "#D8DEE9" # nord4
+split = "#434C5E"       # nord2
+compose_cursor = "#5E81AC" # nord10
+visual_bell = "#3B4252" # nord1
+
+[colors.indexed]
+
+[colors.tab_bar]
+background = "#2E3440" # nord0
+inactive_tab_edge = "#3B4252" # nord1
+
+[colors.tab_bar.active_tab]
+bg_color = "#D8DEE9"  # nord4
+fg_color = "#2E3440"  # nord0
+intensity = "Normal"
+italic = false
+strikethrough = false
+underline = "None"
+
+[colors.tab_bar.inactive_tab]
+bg_color = "#3B4252"  # nord1
+fg_color = "#4C566A"  # nord3
+intensity = "Normal"
+italic = false
+strikethrough = false
+underline = "None"
+
+[colors.tab_bar.inactive_tab_hover]
+bg_color = "#434C5E"  # nord2
+fg_color = "#D8DEE9"  # nord4
+intensity = "Normal"
+italic = true
+strikethrough = false
+underline = "None"
+
+[colors.tab_bar.new_tab]
+bg_color = "#4C566A"  # nord3
+fg_color = "#D8DEE9"  # nord4
+intensity = "Normal"
+italic = false
+strikethrough = false
+underline = "None"
+
+[colors.tab_bar.new_tab_hover]
+bg_color = "#5E81AC"  # nord10
+fg_color = "#ECEFF4"  # nord6
+intensity = "Normal"
+italic = false
+strikethrough = false
+underline = "None"
