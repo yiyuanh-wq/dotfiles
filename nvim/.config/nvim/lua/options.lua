@@ -37,6 +37,16 @@ vim.opt.expandtab = true
 vim.opt.tabstop = 4
 vim.opt.shiftwidth = 4
 
+-- OCaml-specific indentation settings
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = "ocaml",
+  callback = function()
+    vim.bo.shiftwidth = 2
+    vim.bo.tabstop = 2
+    vim.bo.softtabstop = 2
+  end,
+})
+
 -- Enable break indent
 vim.opt.breakindent = true
 
