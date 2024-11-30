@@ -35,12 +35,13 @@ output * bg $background fill
 # You can get the names of your outputs by running: swaymsg -t get_outputs
 set $laptop eDP-1
 set $external_main DP-1
-set $external_split DP-2
+# set $external_split DP-2
 
 output $laptop resolution 2880x1800@120Hz
 output $laptop position 0 2880
 
-output DP-1 resolution 5120x2880@60Hz
+# output DP-1 resolution 5120x2880@60Hz
+output DP-1 resolution 2560x1600@60Hz
 output DP-1 position 0 0
 
 output DP-2 disable
