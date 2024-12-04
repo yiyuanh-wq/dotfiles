@@ -109,6 +109,19 @@ input "type:keyboard" {
 
     # Exit sway (logs you out of your Wayland session)
     bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
+
+    # Screenshot functions
+    # Screenshot of entire screen
+    bindsym Print exec grim ~/Pictures/screenshots/$(date +'%Y-%m-%d_%H-%M-%S').png
+
+    # Screenshot of selected region
+    bindsym $mod+Print exec grim -g "$(slurp)" ~/Pictures/screenshots/$(date +'%Y-%m-%d_%H-%M-%S').png
+
+    # Screenshot of focused window
+    bindsym Alt+Print exec grim -g "$(swaymsg -t get_tree | jq -r '.. | select(.focused?) | .rect | "\(.x),\(.y) \(.width)x\(.height)"')" ~/Pictures/screenshots/$(date +'%Y-%m-%d_%H-%M-%S').png
+
+    # Screenshot with swappy (if you want editing capabilities)
+    bindsym Shift+Print exec grim -g "$(slurp)" - | swappy -f -V9
 #
 # Moving around:
 #
