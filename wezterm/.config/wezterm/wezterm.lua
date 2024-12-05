@@ -12,7 +12,7 @@ end
 
 config.audible_bell = "Disabled"
 config.font = wezterm.font("Berkeley Mono")
-config.font_size = 18
+config.font_size = 17
 
 config.color_scheme = "nord"
 
