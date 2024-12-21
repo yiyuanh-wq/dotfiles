@@ -1,0 +1,5 @@
+# Tools
+- zsh-syntax-highlighting
+- zsh-autosuggestions
+- powerlevel10k
+- eza
