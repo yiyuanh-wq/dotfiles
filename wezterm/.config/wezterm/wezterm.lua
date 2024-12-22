@@ -12,9 +12,9 @@ end
 
 config.audible_bell = "Disabled"
 config.font = wezterm.font("Berkeley Mono")
-config.font_size = 17
+config.font_size = 15
 
-config.color_scheme = "gruvbox_light_hard"
+config.color_scheme = "GruvboxDarkHard"
 
 config.use_fancy_tab_bar = false
 config.enable_tab_bar = true
