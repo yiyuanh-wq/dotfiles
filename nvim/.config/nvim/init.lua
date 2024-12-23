@@ -6,6 +6,8 @@ vim.g.maplocalleader = "\\"
 vim.keymap.set("n", "<space><space>x", "<cmd>source %<CR>")
 vim.keymap.set("n", "<space>x", ":.lua<CR>")
 vim.keymap.set("v", "<space>x", ":lua<CR>")
+vim.keymap.set("n", "<M-j>", "<cmd>cnext<CR>")
+vim.keymap.set("n", "<M-k>", "<cmd>cprev<CR>")
 
 vim.opt.relativenumber = true
 vim.opt.clipboard = "unnamedplus"
@@ -18,24 +20,44 @@ vim.opt.expandtab = true
 
 -- Highlight when yanking text
 vim.api.nvim_create_autocmd('TextYankPost', {
-    desc = 'Highlight when yanking text',
-    group = vim.api.nvim_create_augroup('kickstart-highlight-yank', { clear = true }),
-    callback = function()
-        vim.highlight.on_yank()
-    end,
+  desc = 'Highlight when yanking text',
+  group = vim.api.nvim_create_augroup('kickstart-highlight-yank', { clear = true }),
+  callback = function()
+    vim.highlight.on_yank()
+  end,
 })
 
 -- Create the undodir if it doesn't exist
 local undodir = vim.fn.stdpath("data") .. "/undodir"
 -- Create directory if it doesn't exist
 if vim.fn.isdirectory(undodir) == 0 then
-    vim.fn.mkdir(undodir, "p")
+  vim.fn.mkdir(undodir, "p")
 end
 
 -- Set undodir and enable persistent undo
 vim.opt.undodir = undodir
 vim.opt.undofile = true
 
+-- Configure built-in nvim terminal
+vim.api.nvim_create_autocmd('TermOpen', {
+  group = vim.api.nvim_create_augroup('custom-term-open', { clear = true }),
+  callback = function()
+    vim.opt.number =  false
+    vim.opt.relativenumber = false
+  end,
+})
+
+vim.keymap.set("n", "<space>st", function()
+  vim.cmd.vnew()
+  vim.cmd.term()
+  vim.cmd.wincmd("J")
+  vim.api.nvim_win_set_height(0, 15)
+end)
+
+-- Load nvim plugins
 require("config.lazy")
 
+-- Configure the plugins after they are loaded
 vim.cmd("colorscheme tokyonight")
+
+vim.keymap.set("n", "-", "<cmd>Oil<CR>", { desc = "Open parent directory" })
