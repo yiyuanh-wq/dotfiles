@@ -8,8 +8,8 @@ vim.keymap.set("n", "<space>x", ":.lua<CR>")
 vim.keymap.set("v", "<space>x", ":lua<CR>")
 
 vim.opt.relativenumber = true
+vim.opt.clipboard = "unnamedplus"
 vim.opt.wrap = false
-vim.cmd("colorscheme retrobox")
 
 -- Use 4 spaces for each indentation
 vim.opt.shiftwidth = 4
@@ -37,3 +37,5 @@ vim.opt.undodir = undodir
 vim.opt.undofile = true
 
 require("config.lazy")
+
+vim.cmd("colorscheme tokyonight")
