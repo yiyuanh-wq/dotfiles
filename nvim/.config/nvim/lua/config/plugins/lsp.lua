@@ -2,6 +2,7 @@ return {
   {
     "neovim/nvim-lspconfig",
     dependencies = {
+      "saghen/blink.cmp",
       {
         "folke/lazydev.nvim",
         ft = "lua", -- only load on lua files
@@ -15,10 +16,12 @@ return {
       },
     },
     config = function()
+      local capabilities = require('blink.cmp').get_lsp_capabilities()
       require('lspconfig').lua_ls.setup {
         diagnostics = {
           disable = { 'missing-fields' }
-        }
+        },
+        capabilities = capabilities
       }
 
       require('lspconfig').clangd.setup {
