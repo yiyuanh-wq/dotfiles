@@ -8,7 +8,6 @@ vim.keymap.set("n", "<space>x", ":.lua<CR>")
 vim.keymap.set("v", "<space>x", ":lua<CR>")
 
 vim.opt.relativenumber = true
-vim.opt.background="dark"
 vim.opt.wrap = false
 vim.cmd("colorscheme retrobox")
 
