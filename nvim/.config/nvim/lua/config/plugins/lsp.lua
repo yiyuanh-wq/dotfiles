@@ -18,9 +18,6 @@ return {
     config = function()
       local capabilities = require('blink.cmp').get_lsp_capabilities()
       require('lspconfig').lua_ls.setup {
-        diagnostics = {
-          disable = { 'missing-fields' }
-        },
         capabilities = capabilities
       }
 
@@ -29,6 +26,10 @@ return {
           fallbackFlags = { '-std=c++17' }
         },
       }
+
+      require('lspconfig').rust_analyzer.setup {}
+
+      require('lspconfig').gopls.setup {}
     end,
   }
 }
