@@ -4,7 +4,7 @@
 #
 # Read `man 5 sway` for a complete reference.
 
-font pango:BerkeleyMono 9
+font pango:BerkeleyMono 10
 
 ### Variables
 #
@@ -16,7 +16,7 @@ set $down j
 set $up k
 set $right l
 # Your preferred terminal emulator
-set $term /home/yiyuanh/.local/bin/kitty
+set $term ghostty
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
@@ -258,43 +258,43 @@ bindsym XF86AudioMute exec wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle
 bindsym XF86MonBrightnessUp exec brightnessctl set +5%
 bindsym XF86MonBrightnessDown exec brightnessctl set 5%-
 
-# Catppuccin color palette
-set $base     #000000
-set $mantle   #000000
-set $crust    #000000
+# Tokyo Night Night color palette
+set $base     #1a1b26
+set $mantle   #1a1b26
+set $crust    #1a1b26
 
-set $text     #cdd6f4
-set $subtext0 #a6adc8
-set $subtext1 #bac2de
+set $text     #a9b1d6
+set $subtext0 #9aa5ce
+set $subtext1 #9aa5ce
 
-set $surface0 #313244
-set $surface1 #45475a
-set $surface2 #585b70
+set $surface0 #232433
+set $surface1 #2a2b3d
+set $surface2 #343a52
 
-set $overlay0 #6c7086
-set $overlay1 #7f849c
-set $overlay2 #9399b2
+set $overlay0 #565f89
+set $overlay1 #565f89
+set $overlay2 #565f89
 
-set $blue     #89b4fa
-set $lavender #b4befe
-set $sapphire #74c7ec
-set $sky      #89dceb
-set $teal     #94e2d5
-set $green    #a6e3a1
-set $yellow   #f9e2af
-set $peach    #fab387
-set $maroon   #eba0ac
-set $red      #f38ba8
-set $mauve    #cba6f7
-set $pink     #f5c2e7
-set $flamingo #f2cdcd
-set $rosewater #f5e0dc
+set $blue     #7aa2f7
+set $lavender #b4f9f8
+set $sapphire #7dcfff
+set $sky      #7dcfff
+set $teal     #2ac3de
+set $green    #9ece6a
+set $yellow   #e0af68
+set $peach    #ff9e64
+set $maroon   #f7768e
+set $red      #f7768e
+set $mauve    #bb9af7
+set $pink     #ff007c
+set $flamingo #ff007c
+set $rosewater #ff007c
 
 # Window colors
-client.focused          $lavender $lavender $crust    $blue     $lavender
+client.focused          $blue     $blue     $base     $blue     $blue
 client.focused_inactive $overlay0 $surface1 $text     $surface1 $overlay0
 client.unfocused       $surface1 $crust    $text     $surface1 $surface1
-client.urgent          $peach    $peach    $crust    $peach    $peach
+client.urgent          $red      $red      $base     $red      $red
 
 # Status Bar:
 bar {
@@ -303,15 +303,15 @@ bar {
     tray_output none
 
     colors {
-        background $crust
+        background $base
         statusline $text
         separator  $overlay0
 
-        focused_workspace  $lavender $lavender $crust
+        focused_workspace  $blue     $blue     $base
         active_workspace   $overlay0 $surface1 $text
         inactive_workspace $surface1 $crust    $text
-        urgent_workspace   $peach    $peach    $crust
-        binding_mode      $yellow   $yellow   $crust
+        urgent_workspace   $red      $red      $base
+        binding_mode      $yellow   $yellow   $base
     }
 }
 
