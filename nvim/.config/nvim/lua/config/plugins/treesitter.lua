@@ -12,6 +12,7 @@ return {
           sync_install = false,
           highlight = { enable = true },
           indent = { enable = true },
+          ---@diagnostic disable-next-line: unused-local
           disable = function(lang, buf)
             local max_filesize = 100 * 1024 -- 100KB
             local ok, stats = pcall(vim.loop.fs_stat, vim.api.nvim_buf_get_name(buf))
