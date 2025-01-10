@@ -56,8 +56,3 @@ end)
 
 -- Load nvim plugins
 require("config.lazy")
-
--- Configure the plugins after they are loaded
-vim.cmd("colorscheme tokyonight-night")
-
-vim.keymap.set("n", "-", "<cmd>Oil<CR>", { desc = "Open parent directory" })
