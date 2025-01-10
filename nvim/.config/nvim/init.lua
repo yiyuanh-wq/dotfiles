@@ -12,6 +12,7 @@ vim.keymap.set("n", "<M-k>", "<cmd>cprev<CR>")
 vim.opt.relativenumber = true
 vim.opt.clipboard = "unnamedplus"
 vim.opt.wrap = false
+vim.opt.termguicolors = true
 
 -- Use 4 spaces for each indentation
 vim.opt.shiftwidth = 4
