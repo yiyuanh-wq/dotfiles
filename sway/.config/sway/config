@@ -21,12 +21,13 @@ set $term ghostty
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
 set $menu dmenu_path | wmenu | xargs swaymsg exec --
-set $background "/home/yiyuanh/Pictures/zen.png"
 
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output * bg $background fill
+output * {
+    bg "#2b3339" solid_color
+}
 #
 # Example configuration:
 #
@@ -258,43 +259,46 @@ bindsym XF86AudioMute exec wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle
 bindsym XF86MonBrightnessUp exec brightnessctl set +5%
 bindsym XF86MonBrightnessDown exec brightnessctl set 5%-
 
-# Tokyo Night Night color palette
-set $base     #1a1b26
-set $mantle   #1a1b26
-set $crust    #1a1b26
+# Base/background tones
+set $base   #2b3339
+set $mantle #323c41
+set $crust  #3a4248
 
-set $text     #a9b1d6
-set $subtext0 #9aa5ce
-set $subtext1 #9aa5ce
+# Foreground/text
+set $text     #d3c6aa
+set $subtext0 #859196
+set $subtext1 #9da9a0
 
-set $surface0 #232433
-set $surface1 #2a2b3d
-set $surface2 #343a52
+# Surface/overlay
+set $surface0 #445055
+set $surface1 #4c555b
+set $surface2 #606e75
 
-set $overlay0 #565f89
-set $overlay1 #565f89
-set $overlay2 #565f89
+set $overlay0 #686f76
+set $overlay1 #7c8390
+set $overlay2 #859196
 
-set $blue     #7aa2f7
-set $lavender #b4f9f8
-set $sapphire #7dcfff
-set $sky      #7dcfff
-set $teal     #2ac3de
-set $green    #9ece6a
-set $yellow   #e0af68
-set $peach    #ff9e64
-set $maroon   #f7768e
-set $red      #f7768e
-set $mauve    #bb9af7
-set $pink     #ff007c
-set $flamingo #ff007c
-set $rosewater #ff007c
+# Accents
+set $blue     #7fbbb3
+set $lavender #d699b6
+set $sapphire #7fbbb3
+set $sky      #7fbbb3
+set $teal     #83c092
+set $green    #a7c080
+set $yellow   #dbbc7f
+set $peach    #e69875
+set $maroon   #e67e80
+set $red      #e67e80
+set $mauve    #d699b6
+set $pink     #d699b6
+set $flamingo #e67e80
+set $rosewater #e67e80
 
 # Window colors
 client.focused          $blue     $blue     $base     $blue     $blue
 client.focused_inactive $overlay0 $surface1 $text     $surface1 $overlay0
-client.unfocused       $surface1 $crust    $text     $surface1 $surface1
-client.urgent          $red      $red      $base     $red      $red
+client.unfocused        $surface1 $crust    $text     $surface1 $surface1
+client.urgent           $red      $red      $base     $red      $red
 
 # Status Bar:
 bar {
@@ -311,7 +315,7 @@ bar {
         active_workspace   $overlay0 $surface1 $text
         inactive_workspace $surface1 $crust    $text
         urgent_workspace   $red      $red      $base
-        binding_mode      $yellow   $yellow   $base
+        binding_mode       $yellow   $yellow   $base
     }
 }
 
